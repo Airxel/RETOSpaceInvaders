@@ -22,9 +22,8 @@ public class AnimationsManager : MonoBehaviour
         mainShip1.SetActive(true);
         mainShip2.SetActive(false);
 
-        LeanTween.moveY(mainShipCollection, 10f, 1f).setEase(LeanTweenType.easeInOutSine).setLoopPingPong();
-        LeanTween.moveY(fastShipCollection, 55f, 0.5f).setEase(LeanTweenType.easeInOutSine).setLoopPingPong();
-        LeanTween.moveY(balancedShipCollection, 55f, 1f).setEase(LeanTweenType.easeInOutSine).setLoopPingPong();
+        LeanTween.moveY(fastShipCollection, 55f, 1f).setEase(LeanTweenType.easeInOutSine).setLoopPingPong();
+        LeanTween.moveY(balancedShipCollection, 55f, 1.25f).setEase(LeanTweenType.easeInOutSine).setLoopPingPong();
         LeanTween.moveY(slowShipCollection, 55f, 1.5f).setEase(LeanTweenType.easeInOutSine).setLoopPingPong();
     }
 
