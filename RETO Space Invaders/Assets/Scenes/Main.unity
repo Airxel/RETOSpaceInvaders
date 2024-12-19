@@ -132,7 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 17540304}
   m_Layer: 0
-  m_Name: Fast Ship
+  m_Name: Selection Fast Ship
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -242,6 +242,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nave Rapida 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3160511627589843099, guid: fbe11055de6d99e4190b81f88234b3d4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3160511627589843099, guid: fbe11055de6d99e4190b81f88234b3d4, type: 3}
+      propertyPath: m_TagString
+      value: Fast Ship
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -263,6 +271,14 @@ PrefabInstance:
     - target: {fileID: 8396915960417287113, guid: ad2d2ff0689dd2944992974095434a2f, type: 3}
       propertyPath: m_Name
       value: Nave Equilibrada 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8396915960417287113, guid: ad2d2ff0689dd2944992974095434a2f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8396915960417287113, guid: ad2d2ff0689dd2944992974095434a2f, type: 3}
+      propertyPath: m_TagString
+      value: Balanced Ship
       objectReference: {fileID: 0}
     - target: {fileID: 9208742207325643123, guid: ad2d2ff0689dd2944992974095434a2f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -331,6 +347,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nave Primaria 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5010498394261545291, guid: 6485ce3fafee29046abbcf51b6e4e0cc, type: 3}
+      propertyPath: m_TagString
+      value: Main Ship
+      objectReference: {fileID: 0}
     - target: {fileID: 5675394329383779313, guid: 6485ce3fafee29046abbcf51b6e4e0cc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -371,7 +391,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1015,7 +1036,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &198657136
 Transform:
   m_ObjectHideFlags: 0
@@ -1436,9 +1457,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4610979911024698403, guid: 054489b3ecc475e4db345e854f1b475d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 4610979911024698403, guid: 054489b3ecc475e4db345e854f1b475d, type: 3}
+      propertyPath: m_TagString
+      value: Main Ship
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1674,6 +1700,10 @@ PrefabInstance:
     - target: {fileID: 3535425779019525928, guid: be89085051772f24db2bceea5880a019, type: 3}
       propertyPath: m_Name
       value: Nave Lenta 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3535425779019525928, guid: be89085051772f24db2bceea5880a019, type: 3}
+      propertyPath: m_TagString
+      value: Slow Ship
       objectReference: {fileID: 0}
     - target: {fileID: 4205108261395363218, guid: be89085051772f24db2bceea5880a019, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2006,7 +2036,7 @@ GameObject:
   m_Component:
   - component: {fileID: 413222849}
   m_Layer: 0
-  m_Name: Slow Ship
+  m_Name: Selection Slow Ship
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2186,8 +2216,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 498203707}
-  - component: {fileID: 498203709}
-  - component: {fileID: 498203708}
   m_Layer: 0
   m_Name: Main Ship
   m_TagString: Untagged
@@ -2204,7 +2232,7 @@ Transform:
   m_GameObject: {fileID: 498203706}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.5, z: 0}
+  m_LocalPosition: {x: 0, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2212,32 +2240,6 @@ Transform:
   - {fileID: 51110760}
   m_Father: {fileID: 30654139}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &498203708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 498203706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c498a8753d971d4da126ec2b649f897, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 50
---- !u!114 &498203709
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 498203706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c498a8753d971d4da126ec2b649f897, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
 --- !u!1 &500892875
 GameObject:
   m_ObjectHideFlags: 0
@@ -2271,6 +2273,65 @@ Transform:
   - {fileID: 909008891}
   m_Father: {fileID: 198657136}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &502506822
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 502506823}
+  - component: {fileID: 502506824}
+  m_Layer: 0
+  m_Name: PlayerSelection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &502506823
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 502506822}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2033761142}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &502506824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 502506822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3632a74d43a693b40b8bbca0614d559d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainShip1: {fileID: 51110761}
+  mainShip2: {fileID: 281530670}
+  fastShip1: {fileID: 1584305763}
+  fastShip2: {fileID: 872255189}
+  balancedShip1: {fileID: 1508759905}
+  balancedShip2: {fileID: 47223240}
+  slowShip1: {fileID: 335738348}
+  slowShip2: {fileID: 972379465}
+  projectile: {fileID: 2535070997529284090, guid: c11d9e07569a166489709a795482a5df, type: 3}
+  fastShipCollection: {fileID: 17540303}
+  balancedShipCollection: {fileID: 1401849513}
+  slowShipCollection: {fileID: 413222848}
+  mainShipCollection: {fileID: 498203706}
+  modelChangeTime: 0.5
+  mainShipSpeed: 50
 --- !u!1 &529523423
 GameObject:
   m_ObjectHideFlags: 0
@@ -3955,6 +4016,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nave Lenta 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7551315166454636357, guid: f39fee9791e818b4b9e3d9ddc611c091, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7551315166454636357, guid: f39fee9791e818b4b9e3d9ddc611c091, type: 3}
+      propertyPath: m_TagString
+      value: Slow Ship
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4903,7 +4972,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1401849514}
   m_Layer: 0
-  m_Name: Balanced Ship
+  m_Name: Selection Balanced Ship
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5016,6 +5085,10 @@ PrefabInstance:
     - target: {fileID: 8019883218720496333, guid: 022debfcc865177408195ffe02689bf8, type: 3}
       propertyPath: m_Name
       value: Nave Equilibrada 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8019883218720496333, guid: 022debfcc865177408195ffe02689bf8, type: 3}
+      propertyPath: m_TagString
+      value: Balanced Ship
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5318,7 +5391,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1569846098
 Transform:
   m_ObjectHideFlags: 0
@@ -5872,6 +5945,10 @@ PrefabInstance:
     - target: {fileID: 3075226598778971529, guid: 434547268e94bea48b36d3e1a323c959, type: 3}
       propertyPath: m_Name
       value: Nave Rapida 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3075226598778971529, guid: 434547268e94bea48b36d3e1a323c959, type: 3}
+      propertyPath: m_TagString
+      value: Fast Ship
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6705,6 +6782,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1569846098}
+  - {fileID: 502506823}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2085091335

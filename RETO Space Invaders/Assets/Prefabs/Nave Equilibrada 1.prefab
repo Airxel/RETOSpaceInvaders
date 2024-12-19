@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nave Equilibrada 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2846960f4c9c8be438618b570e3c1be4, type: 3}
+      propertyPath: m_TagString
+      value: Balanced Ship
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

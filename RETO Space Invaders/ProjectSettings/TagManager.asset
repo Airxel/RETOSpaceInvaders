@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Fast Ship
+  - Balanced Ship
+  - Slow Ship
+  - Main Ship
+  - Shelter
+  - Enemy
   layers:
   - Default
   - TransparentFX
