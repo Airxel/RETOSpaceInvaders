@@ -22,12 +22,7 @@ public class AnimationsManager : MonoBehaviour
 
     private void Start()
     {
-        mainShip1.SetActive(true);
-        mainShip2.SetActive(false);
 
-        LeanTween.moveY(fastShipCollection, 55f, 1f).setEase(LeanTweenType.easeInOutSine).setLoopPingPong();
-        LeanTween.moveY(balancedShipCollection, 55f, 1.25f).setEase(LeanTweenType.easeInOutSine).setLoopPingPong();
-        LeanTween.moveY(slowShipCollection, 55f, 1.5f).setEase(LeanTweenType.easeInOutSine).setLoopPingPong();
     }
 
     private void Update()
@@ -37,18 +32,6 @@ public class AnimationsManager : MonoBehaviour
         if (modelChangeTimer >= modelChangeTime)
         {
             modelChanging = !modelChanging;
-
-            mainShip1.SetActive(modelChanging);
-            mainShip2.SetActive(!modelChanging);
-
-            fastShip1.SetActive(modelChanging);
-            fastShip2.SetActive(!modelChanging);
-
-            balancedShip1.SetActive(modelChanging);
-            balancedShip2.SetActive(!modelChanging);
-
-            slowShip1.SetActive(modelChanging);
-            slowShip2.SetActive(!modelChanging);
 
             leftShelter1.SetActive(modelChanging);
             leftShelter2.SetActive(!modelChanging);

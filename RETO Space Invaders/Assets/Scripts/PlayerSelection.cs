@@ -20,7 +20,10 @@ public class PlayerSelection : MonoBehaviour
 
     [SerializeField]
     private float mainShipSpeed = 50f;
+
+    [SerializeField]
     private float projectileSpeed = 100f;
+
     private float mainShipMovement;
 
     private void Start()
