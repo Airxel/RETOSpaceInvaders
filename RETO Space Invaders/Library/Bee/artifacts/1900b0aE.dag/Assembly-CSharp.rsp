@@ -403,6 +403,7 @@
 "Assets/LeanTween/Testing/TestingSceneSwitching.cs"
 "Assets/LeanTween/Testing/TestingSequencer.cs"
 "Assets/Scripts/AnimationsManager.cs"
+"Assets/Scripts/CanvasManager.cs"
 "Assets/Scripts/PlayerProjectile.cs"
 "Assets/Scripts/PlayerSelection.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
