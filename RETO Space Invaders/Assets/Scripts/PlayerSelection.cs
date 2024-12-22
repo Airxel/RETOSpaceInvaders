@@ -5,12 +5,10 @@ using UnityEngine;
 public class PlayerSelection : MonoBehaviour
 {
     [SerializeField]
-    GameObject mainShip1, mainShip2, fastShip1, fastShip2, balancedShip1, balancedShip2, slowShip1, slowShip2, projectile;
+    GameObject selectionMainShip1, selectionMainShip2, selectionFastShip1, selectionFastShip2, selectionBalancedShip1, selectionBalancedShip2, selectionSlowShip1, selectionSlowShip2, projectile, newProjectile;
 
     [SerializeField]
-    GameObject fastShipCollection, balancedShipCollection, slowShipCollection, mainShipCollection;
-
-    private GameObject newProjectile;
+    GameObject mainShipCollection;
 
     [SerializeField]
     private float modelChangeTime = 1f;
@@ -22,21 +20,19 @@ public class PlayerSelection : MonoBehaviour
     private float mainShipSpeed = 50f;
 
     [SerializeField]
-    private float projectileSpeed = 100f;
+    private float mainShipMovementLimit = 80f;
 
     private float mainShipMovement;
-
-    private void Start()
-    {
-        LeanTween.moveY(fastShipCollection, 55f, 1f).setEase(LeanTweenType.easeInOutSine).setLoopPingPong();
-        LeanTween.moveY(balancedShipCollection, 55f, 1.25f).setEase(LeanTweenType.easeInOutSine).setLoopPingPong();
-        LeanTween.moveY(slowShipCollection, 55f, 1.5f).setEase(LeanTweenType.easeInOutSine).setLoopPingPong();
-    }
 
     private void Update()
     {
         mainShipMovement = Input.GetAxis("Horizontal");
-        mainShipCollection.transform.position = mainShipCollection.transform.position + new Vector3(mainShipMovement, 0f, 0f) * mainShipSpeed * Time.deltaTime;
+
+        Vector3 newMainShipMovement = mainShipCollection.transform.position + new Vector3(mainShipMovement, 0f, 0f) * mainShipSpeed * Time.deltaTime;
+
+        newMainShipMovement.x = Mathf.Clamp(newMainShipMovement.x, -mainShipMovementLimit, mainShipMovementLimit);
+
+        mainShipCollection.transform.position = newMainShipMovement;
 
         modelChangeTimer = modelChangeTimer + Time.deltaTime;
 
@@ -44,27 +40,46 @@ public class PlayerSelection : MonoBehaviour
         {
             modelChanging = !modelChanging;
 
-            mainShip1.SetActive(modelChanging);
-            mainShip2.SetActive(!modelChanging);
-
-            fastShip1.SetActive(modelChanging);
-            fastShip2.SetActive(!modelChanging);
-
-            balancedShip1.SetActive(modelChanging);
-            balancedShip2.SetActive(!modelChanging);
-
-            slowShip1.SetActive(modelChanging);
-            slowShip2.SetActive(!modelChanging);
+            SelectionMainShipAnimation();
+            SelectionFastShipAnimation();
+            SelectionBalancedShipAnimation();
+            SelectionSlowShipAnimation();
 
             modelChangeTimer = 0f;
         }
-        if (Input.GetKeyUp(KeyCode.Space) && newProjectile == null)
+
+        ShootingProjectile();
+    }
+
+    private void SelectionMainShipAnimation()
+    {
+        selectionMainShip1.SetActive(modelChanging);
+        selectionMainShip2.SetActive(!modelChanging);
+    }
+
+    private void SelectionFastShipAnimation()
+    {
+        selectionFastShip1.SetActive(modelChanging);
+        selectionFastShip2.SetActive(!modelChanging);
+    }
+
+    private void SelectionBalancedShipAnimation()
+    {
+        selectionBalancedShip1.SetActive(modelChanging);
+        selectionBalancedShip2.SetActive(!modelChanging);
+    }
+
+    private void SelectionSlowShipAnimation()
+    {
+        selectionSlowShip1.SetActive(modelChanging);
+        selectionSlowShip2.SetActive(!modelChanging);
+    }
+
+    private void ShootingProjectile()
+    {
+        if (Input.GetKeyUp(KeyCode.Space) && newProjectile == null && mainShipCollection.activeSelf)
         {
             newProjectile = Instantiate(projectile, mainShipCollection.transform.position, Quaternion.identity);
-        }
-        if (newProjectile)
-        {
-            newProjectile.transform.Translate(Vector3.up * projectileSpeed * Time.deltaTime);
-        }
+        }  
     }
 }

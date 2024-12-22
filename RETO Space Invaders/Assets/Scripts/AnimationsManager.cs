@@ -6,7 +6,7 @@ public class AnimationsManager : MonoBehaviour
 {
 
     [SerializeField]
-    GameObject mainShip1, mainShip2, fastShip1, fastShip2, balancedShip1, balancedShip2, slowShip1, slowShip2;
+    GameObject fastShip1, fastShip2, balancedShip1, balancedShip2, slowShip1, slowShip2;
 
     [SerializeField]
     GameObject leftShelter1, leftShelter2, middleLeftShelter1, middleLeftShelter2, middleRightShelter1, middleRightShelter2, rightShelter1, rightShelter2;
@@ -33,19 +33,45 @@ public class AnimationsManager : MonoBehaviour
         {
             modelChanging = !modelChanging;
 
-            leftShelter1.SetActive(modelChanging);
-            leftShelter2.SetActive(!modelChanging);
-
-            middleLeftShelter1.SetActive(modelChanging);
-            middleLeftShelter2.SetActive(!modelChanging);
-
-            middleRightShelter1.SetActive(modelChanging);
-            middleRightShelter2.SetActive(!modelChanging);
-
-            rightShelter1.SetActive(modelChanging);
-            rightShelter2.SetActive(!modelChanging);
+            FastShipAnimation();
+            BalancedShipAnimation();
+            SlowShipAnimation();
+            ShelterAnimation();
 
             modelChangeTimer = 0f;
         }
+    }
+
+    private void FastShipAnimation()
+    {
+        fastShip1.SetActive(modelChanging);
+        fastShip2.SetActive(!modelChanging);
+    }
+
+    private void BalancedShipAnimation()
+    {
+        balancedShip1.SetActive(modelChanging);
+        balancedShip2.SetActive(!modelChanging);
+    }
+
+    private void SlowShipAnimation()
+    {
+        slowShip1.SetActive(modelChanging);
+        slowShip2.SetActive(!modelChanging);
+    }
+
+    private void ShelterAnimation()
+    {
+        leftShelter1.SetActive(modelChanging);
+        leftShelter2.SetActive(!modelChanging);
+
+        middleLeftShelter1.SetActive(modelChanging);
+        middleLeftShelter2.SetActive(!modelChanging);
+
+        middleRightShelter1.SetActive(modelChanging);
+        middleRightShelter2.SetActive(!modelChanging);
+
+        rightShelter1.SetActive(modelChanging);
+        rightShelter2.SetActive(!modelChanging);
     }
 }

@@ -10,6 +10,7 @@ TagManager:
   - Main Ship
   - Shelter
   - Enemy
+  - Top Wall
   layers:
   - Default
   - TransparentFX
