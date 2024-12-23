@@ -405,6 +405,7 @@
 "Assets/Scripts/AnimationsManager.cs"
 "Assets/Scripts/BalancedShipManager.cs"
 "Assets/Scripts/CanvasManager.cs"
+"Assets/Scripts/EnemiesManager.cs"
 "Assets/Scripts/FastShipManager.cs"
 "Assets/Scripts/GameplayPlayerProjectile.cs"
 "Assets/Scripts/PlayerSelection.cs"

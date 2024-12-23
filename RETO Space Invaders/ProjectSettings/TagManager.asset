@@ -11,6 +11,8 @@ TagManager:
   - Shelter
   - Enemy
   - Top Wall
+  - Left Wall
+  - Right Wall
   layers:
   - Default
   - TransparentFX
