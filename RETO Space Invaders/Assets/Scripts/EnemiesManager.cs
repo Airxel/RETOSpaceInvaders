@@ -5,7 +5,11 @@ using UnityEngine;
 public class EnemiesManager : MonoBehaviour
 {
     [SerializeField]
+    GameObject projectile, newProjectile;
+
+    [SerializeField]
     private float modelChangeTime = 1f;
+
     private float modelChangeTimer = 0f;
 
     private bool modelChanging = true;
@@ -45,31 +49,23 @@ public class EnemiesManager : MonoBehaviour
     float enemiesMovement;
 
     private bool limitReached = true;
-
     private bool movingRight = true;
+
+    private float lastProjectileTimer = 0f;
+    private float nextProjectileTimer;
+
+    [SerializeField]
+    private float minSeconds = 1f;
+
+    [SerializeField]
+    private float maxSeconds = 5f;
 
     private void Start()
     {
-        {
-            for (int i = 0; i < totalColumns; i++)
-            {
-                matrizEnemies.Add(new List<GameObject>());
+        EnemiesSpawn();
 
-                for (int j = 0; j < totalRow; j++)
-                {
-                    Vector3 position = new Vector3(initialPosX, initialPosY, 0.0f);
-                    position.x = position.x + i * spaceBetweenElementsX;
-                    position.y = position.y - j * spaceBetweenElementsY;
+        nextProjectileTimer = Random.Range(minSeconds, maxSeconds);
 
-                    GameObject enemySpawn = enemies[j];
-                    GameObject enemy = Instantiate(enemySpawn, position, Quaternion.identity);
-
-                    enemy.name = "Alien(" + i.ToString() + "," + j.ToString() + ")";
-
-                    matrizEnemies[i].Add(enemy);
-                }
-            }
-        }
     }
     private void Update()
     {
@@ -89,6 +85,16 @@ public class EnemiesManager : MonoBehaviour
 
             modelChangeTimer = 0f;
 
+        }
+
+        lastProjectileTimer = lastProjectileTimer + Time.deltaTime;
+
+        if (lastProjectileTimer >= nextProjectileTimer)
+        {
+            LastActiveEnemyShooting();
+
+            lastProjectileTimer = 0f;
+            nextProjectileTimer = Random.Range(minSeconds, maxSeconds);
         }
 
         EnemiesLateralMovement();
@@ -157,6 +163,50 @@ public class EnemiesManager : MonoBehaviour
 
     }
 
+    private void LastActiveEnemyShooting()
+    {
+        int randX = Random.Range(0, totalColumns);
+        int activeEnemy = -1;
+
+        for (int i = 0; i < totalRow; i++)
+        {
+            if (matrizEnemies[randX][i].activeSelf == true)
+            {
+                activeEnemy = i;
+            }
+        }
+        if (activeEnemy != -1)
+        {
+            Vector3 activeEnemyPosition = matrizEnemies[randX][activeEnemy].transform.position;
+
+            newProjectile = Instantiate(projectile, activeEnemyPosition, projectile.transform.rotation);
+
+            Debug.Log("Ultimo elemento activo " + randX + ", " + activeEnemy);
+        }
+    }
+
+    private void EnemiesSpawn()
+    {
+        for (int i = 0; i < totalColumns; i++)
+        {
+            matrizEnemies.Add(new List<GameObject>());
+
+            for (int j = 0; j < totalRow; j++)
+            {
+                Vector3 position = new Vector3(initialPosX, initialPosY, 0.0f);
+                position.x = position.x + i * spaceBetweenElementsX;
+                position.y = position.y - j * spaceBetweenElementsY;
+
+                GameObject enemySpawn = enemies[j];
+                GameObject enemy = Instantiate(enemySpawn, position, Quaternion.identity);
+
+                enemy.name = "Alien(" + i.ToString() + "," + j.ToString() + ")";
+
+                matrizEnemies[i].Add(enemy);
+            }
+        }
+    }
+
     private void InvaderAnimation(GameObject enemy)
     {
         Transform invader1 = enemy.transform.GetChild(0);
@@ -164,5 +214,15 @@ public class EnemiesManager : MonoBehaviour
 
         invader1.gameObject.SetActive(modelChanging);
         invader2.gameObject.SetActive(!modelChanging);
+    }
+
+    private void RandomDeactivator()
+    {
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            int randX = Random.Range(0, totalColumns);
+            int randY = Random.Range(0, totalRow);
+            matrizEnemies[randX][randY].SetActive(!matrizEnemies[randX][randY].activeSelf);
+        }
     }
 }

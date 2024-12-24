@@ -14,7 +14,11 @@ public class GameplayPlayerProjectile : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Top Wall"))
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(this.gameObject);
+        }
+        else if (other.gameObject.CompareTag("Top Wall"))
         {
             Destroy(this.gameObject);
         }

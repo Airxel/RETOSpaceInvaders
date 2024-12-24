@@ -48,15 +48,18 @@ public class PlayerProjectile : MonoBehaviour
     private void FastShipSelected()
     {
         CanvasManager.instance.fastShipCollection.SetActive(true);
+        CanvasManager.instance.enemiesSpawner.SetActive(true);
     }
 
     private void BalancedShipSelected()
     {
         CanvasManager.instance.balancedShipCollection.SetActive(true);
+        CanvasManager.instance.enemiesSpawner.SetActive(true);
     }
 
     private void SlowShipSelected()
     {
         CanvasManager.instance.slowShipCollection.SetActive(true);
+        CanvasManager.instance.enemiesSpawner.SetActive(true);
     }
 }

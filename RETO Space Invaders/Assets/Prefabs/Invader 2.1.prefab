@@ -68,6 +68,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Invader 2.1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6b4605495b2969e4dbf30c500f5e9603, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -75,9 +79,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6b4605495b2969e4dbf30c500f5e9603, type: 3}
       insertIndex: -1
       addedObject: {fileID: -4518879858514267576}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6b4605495b2969e4dbf30c500f5e9603, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6050364802439431246}
   m_SourcePrefab: {fileID: 100100000, guid: 6b4605495b2969e4dbf30c500f5e9603, type: 3}
 --- !u!1 &5302654040507486049 stripped
 GameObject:
@@ -99,36 +100,9 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 11, y: 7, z: 1}
   m_Center: {x: 0, y: 3.5, z: 0}
---- !u!54 &6050364802439431246
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5302654040507486049}
-  serializedVersion: 4
-  m_Mass: 0.1
-  m_Drag: 0
-  m_AngularDrag: 0
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0

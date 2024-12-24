@@ -9,7 +9,7 @@ public class CanvasManager : MonoBehaviour
     [SerializeField]
     GameObject mainMenu, gameOverMenu, victoryMenu, menuBeams, upBanner, selectionFastShipCollection, selectionBalancedShipCollection, selectionSlowShipCollection;
 
-    public GameObject playerSelection, playerSelectionUI, fastShipCollection, balancedShipCollection, slowShipCollection, mainShipCollection;
+    public GameObject playerSelection, playerSelectionUI, fastShipCollection, balancedShipCollection, slowShipCollection, mainShipCollection, enemiesSpawner;
 
     //Singleton
     public static CanvasManager instance;

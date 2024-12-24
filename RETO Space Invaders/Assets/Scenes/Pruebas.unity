@@ -263,7 +263,7 @@ GameObject:
   - component: {fileID: 476959231}
   m_Layer: 0
   m_Name: Yellow Invader
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1004,7 +1004,7 @@ GameObject:
   - component: {fileID: 1523101436}
   m_Layer: 0
   m_Name: Purple Invader
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1087,7 +1087,7 @@ GameObject:
   - component: {fileID: 1556773390}
   m_Layer: 0
   m_Name: Pink Invader
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1263,6 +1263,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fde2a5f91bdc1974aa7afa249fb35919, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectile: {fileID: 4692230990507458679, guid: f22a30c38fe94154eac9299024dc5d50, type: 3}
+  newProjectile: {fileID: 0}
   modelChangeTime: 1
   totalColumns: 11
   totalRow: 4
@@ -1277,7 +1279,9 @@ MonoBehaviour:
   - {fileID: 476959228}
   speed: 5
   moveDownDistance: 1.5
-  enemiesMovementLimit: 80
+  enemiesMovementLimit: 75
+  minSeconds: 1
+  maxSeconds: 3
 --- !u!1 &1904768707
 GameObject:
   m_ObjectHideFlags: 0
@@ -1385,7 +1389,7 @@ GameObject:
   - component: {fileID: 1924520696}
   m_Layer: 0
   m_Name: Green Invader
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

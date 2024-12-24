@@ -13,6 +13,8 @@ TagManager:
   - Top Wall
   - Left Wall
   - Right Wall
+  - Enemy Projectile
+  - Player Projectile
   layers:
   - Default
   - TransparentFX
