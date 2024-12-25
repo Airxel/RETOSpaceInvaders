@@ -14,7 +14,11 @@ TagManager:
   - Left Wall
   - Right Wall
   - Enemy Projectile
+  - Fast Projectile
+  - Balanced Projectile
+  - Slow Projectile
   - Player Projectile
+  - Bottom Wall
   layers:
   - Default
   - TransparentFX

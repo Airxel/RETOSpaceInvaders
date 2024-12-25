@@ -11,4 +11,24 @@ public class EnemiesProjectile : MonoBehaviour
     {
         this.transform.Translate(Vector3.up * projectileSpeed * Time.deltaTime);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Fast Ship"))
+        {
+            Destroy(this.gameObject);
+        }
+        else if (other.gameObject.CompareTag("Balanced Ship"))
+        {
+            Destroy(this.gameObject);
+        }
+        else if (other.gameObject.CompareTag("Slow Ship"))
+        {
+            Destroy(this.gameObject);
+        }
+        else if (other.gameObject.CompareTag("Bottom Wall"))
+        {
+            Destroy(this.gameObject);
+        }
+    }
 }

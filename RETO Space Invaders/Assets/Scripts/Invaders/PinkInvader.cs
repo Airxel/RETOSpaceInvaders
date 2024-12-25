@@ -4,10 +4,66 @@ using UnityEngine;
 
 public class PinkInvader : MonoBehaviour
 {
+    [SerializeField]
+    private int hitPoints = 3;
+
+    [SerializeField]
+    private float points = 300f;
+
+    [SerializeField]
+    private int fastProjectileDamage = 1;
+
+    [SerializeField]
+    private int balancedProjectileDamage = 2;
+
+    [SerializeField]
+    private int slowProjectileDamage = 3;
+
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player Projectile"))
+        if (other.gameObject.CompareTag("Fast Projectile"))
         {
+            FastProjectileHit();
+        }
+        else if (other.gameObject.CompareTag("Balanced Projectile"))
+        {
+            BalancedProjectileHit();
+        }
+        else if (other.gameObject.CompareTag("Slow Projectile"))
+        {
+            SlowProjectileHit();
+        }
+    }
+
+    private void FastProjectileHit()
+    {
+        hitPoints = hitPoints - fastProjectileDamage;
+
+        if (hitPoints <= 0)
+        {
+            CanvasManager.instance.AddPoints(points);
+            this.gameObject.SetActive(false);
+        }
+    }
+
+    private void BalancedProjectileHit()
+    {
+        hitPoints = hitPoints - balancedProjectileDamage;
+
+        if (hitPoints <= 0)
+        {
+            CanvasManager.instance.AddPoints(points);
+            this.gameObject.SetActive(false);
+        }
+    }
+
+    private void SlowProjectileHit()
+    {
+        hitPoints = hitPoints - slowProjectileDamage;
+
+        if (hitPoints <= 0)
+        {
+            CanvasManager.instance.AddPoints(points);
             this.gameObject.SetActive(false);
         }
     }

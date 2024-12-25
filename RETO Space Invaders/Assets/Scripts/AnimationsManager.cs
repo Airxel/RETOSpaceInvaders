@@ -12,18 +12,10 @@ public class AnimationsManager : MonoBehaviour
     GameObject leftShelter1, leftShelter2, middleLeftShelter1, middleLeftShelter2, middleRightShelter1, middleRightShelter2, rightShelter1, rightShelter2;
 
     [SerializeField]
-    GameObject fastShipCollection, balancedShipCollection, slowShipCollection;
-
-    [SerializeField]
     private float modelChangeTime = 1f;
     private float modelChangeTimer = 0f;
 
     private bool modelChanging = true;
-
-    private void Start()
-    {
-
-    }
 
     private void Update()
     {

@@ -38,15 +38,24 @@ public class EnemiesManager : MonoBehaviour
     List<List<GameObject>> matrizEnemies = new List<List<GameObject>>();
 
     [SerializeField]
-    float speed = 2.5f;
+    private int enemiesCount = 0;
 
     [SerializeField]
-    float moveDownDistance = 1.5f;
+    private float speed = 2.5f;
 
     [SerializeField]
-    float enemiesMovementLimit = 80f;
+    private float speedAcceleration = 0f;
 
-    float enemiesMovement;
+    [SerializeField]
+    private float accelerationFactor = 0.1f;
+
+    [SerializeField]
+    private float moveDownDistance = 1.5f;
+
+    [SerializeField]
+    private float enemiesMovementLimit = 80f;
+
+    private float enemiesMovement;
 
     private bool limitReached = true;
     private bool movingRight = true;
@@ -87,6 +96,13 @@ public class EnemiesManager : MonoBehaviour
 
         }
 
+        enemiesCount = EnemiesCounter();
+
+        if (enemiesCount == 0)
+        {
+            Debug.Log("ALL DEAD!");
+        }
+
         lastProjectileTimer = lastProjectileTimer + Time.deltaTime;
 
         if (lastProjectileTimer >= nextProjectileTimer)
@@ -97,8 +113,60 @@ public class EnemiesManager : MonoBehaviour
             nextProjectileTimer = Random.Range(minSeconds, maxSeconds);
         }
 
+        EnemiesSpeed();
+
         EnemiesLateralMovement();
 
+    }
+
+    private void EnemiesSpawn()
+    {
+        for (int i = 0; i < totalColumns; i++)
+        {
+            matrizEnemies.Add(new List<GameObject>());
+
+            for (int j = 0; j < totalRow; j++)
+            {
+                Vector3 position = new Vector3(initialPosX, initialPosY, 0.0f);
+                position.x = position.x + i * spaceBetweenElementsX;
+                position.y = position.y - j * spaceBetweenElementsY;
+
+                GameObject enemySpawn = enemies[j];
+                GameObject enemy = Instantiate(enemySpawn, position, Quaternion.identity);
+
+                enemy.name = "Alien(" + i.ToString() + "," + j.ToString() + ")";
+
+                matrizEnemies[i].Add(enemy);
+            }
+        }
+    }
+
+    private int EnemiesCounter()
+    {
+        enemiesCount = 0;
+
+        for (int i = 0; i < totalColumns; i++)
+        {
+            for (int j = 0; j < totalRow; j++)
+            {
+                if (matrizEnemies[i][j].activeSelf)
+                {
+                    enemiesCount = enemiesCount + 1;
+                }
+            }
+        }
+
+        return enemiesCount;
+
+    }
+
+    private void EnemiesSpeed()
+    {
+        int enemiesCount = EnemiesCounter();
+
+        speedAcceleration = speed + (totalColumns * totalRow - enemiesCount) * accelerationFactor;
+
+        //speedAcceleration = Mathf.Clamp(speed, 2.5f, 10f);
     }
 
     private void EnemiesLateralMovement()
@@ -113,11 +181,11 @@ public class EnemiesManager : MonoBehaviour
 
                 if (movingRight)
                 {
-                    enemiesMovement = speed * Time.deltaTime;
+                    enemiesMovement = speedAcceleration * Time.deltaTime;
                 }
                 else if (!movingRight)
                 {
-                    enemiesMovement = -speed * Time.deltaTime;
+                    enemiesMovement = -speedAcceleration * Time.deltaTime;
                 }
 
                 Vector3 newEnemiesMovement = enemy.transform.position;
@@ -181,31 +249,11 @@ public class EnemiesManager : MonoBehaviour
 
             newProjectile = Instantiate(projectile, activeEnemyPosition, projectile.transform.rotation);
 
-            Debug.Log("Ultimo elemento activo " + randX + ", " + activeEnemy);
+            //Debug.Log("Ultimo elemento activo " + randX + ", " + activeEnemy);
         }
     }
 
-    private void EnemiesSpawn()
-    {
-        for (int i = 0; i < totalColumns; i++)
-        {
-            matrizEnemies.Add(new List<GameObject>());
-
-            for (int j = 0; j < totalRow; j++)
-            {
-                Vector3 position = new Vector3(initialPosX, initialPosY, 0.0f);
-                position.x = position.x + i * spaceBetweenElementsX;
-                position.y = position.y - j * spaceBetweenElementsY;
-
-                GameObject enemySpawn = enemies[j];
-                GameObject enemy = Instantiate(enemySpawn, position, Quaternion.identity);
-
-                enemy.name = "Alien(" + i.ToString() + "," + j.ToString() + ")";
-
-                matrizEnemies[i].Add(enemy);
-            }
-        }
-    }
+    
 
     private void InvaderAnimation(GameObject enemy)
     {

@@ -15,10 +15,37 @@ public class SlowShipManager : MonoBehaviour
     [SerializeField]
     GameObject projectile, newProjectile;
 
+    private int lifes;
+
     private void Update()
     {
         ShipMovement();
         ShootingProjectile();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Enemy Projectile"))
+        {
+            EnemyHit();
+        }
+    }
+
+    private void EnemyHit()
+    {
+        lifes = CanvasManager.instance.lifes - 1;
+
+        CanvasManager.instance.lifes = lifes;
+        CanvasManager.instance.lifesNumber.text = lifes.ToString();
+
+        Debug.Log("HIT");
+
+        if (lifes <= 0)
+        {
+            Debug.Log("DEAD");
+
+            this.gameObject.SetActive(false);
+        }
     }
 
     private void ShootingProjectile()
