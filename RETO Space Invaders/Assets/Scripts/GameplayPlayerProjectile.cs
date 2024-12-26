@@ -22,5 +22,9 @@ public class GameplayPlayerProjectile : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+        else if (other.gameObject.CompareTag("Shelter"))
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

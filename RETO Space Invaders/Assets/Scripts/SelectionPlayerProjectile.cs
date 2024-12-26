@@ -44,6 +44,7 @@ public class PlayerProjectile : MonoBehaviour
         CanvasManager.instance.playerSelectionUI.SetActive(false);
         CanvasManager.instance.informationUI.SetActive(true);
         CanvasManager.instance.mainShipCollection.SetActive(false);
+        CanvasManager.instance.sheltersCollection.SetActive(true);
         CanvasManager.instance.enemiesSpawner.SetActive(true);
     }
 
