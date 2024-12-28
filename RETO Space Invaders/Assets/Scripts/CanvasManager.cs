@@ -13,7 +13,7 @@ public class CanvasManager : MonoBehaviour
     [SerializeField]
     public TextMeshProUGUI scoreNumber, highScoreNumber, lifesNumber;
 
-    public GameObject playerSelection, playerSelectionUI, informationUI, fastShipCollection, balancedShipCollection, slowShipCollection, mainShipCollection, enemiesSpawner, sheltersCollection;
+    public GameObject playerSelection, playerSelectionUI, informationUI, fastShipCollection, balancedShipCollection, slowShipCollection, mainShipCollection, enemiesSpawner, sheltersCollection, bigInvaderSpawner;
 
     [SerializeField]
     public int lifes = 3;
