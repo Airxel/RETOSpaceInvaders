@@ -4,95 +4,47 @@ using UnityEngine;
 
 public class BigInvader : MonoBehaviour
 {
+    [SerializeField]
+    private float points = 100f;
+
     private void OnTriggerEnter(Collider other)
     {
-        if (InvadersManager.instance.rightSpawn == true)
+        if (other.gameObject.CompareTag("Fast Projectile") ||
+            other.gameObject.CompareTag("Balanced Projectile") ||
+            other.gameObject.CompareTag("Slow Projectile") ||
+            other.gameObject.CompareTag("Right Wall") ||
+            other.gameObject.CompareTag("Left Wall"))
         {
-            if (other.gameObject.CompareTag("Fast Projectile"))
+            if (InvadersManager.instance.rightSpawn)
             {
-                Destroy(this.gameObject);
-
-                InvadersManager.instance.newBigInvader = null;
-
-                InvadersManager.instance.rightSpawn = false;
+                BigInvaderHitRight();
             }
-            else if (other.gameObject.CompareTag("Balanced Projectile"))
+            else
             {
-                Destroy(this.gameObject);
-
-                InvadersManager.instance.newBigInvader = null;
-
-                InvadersManager.instance.rightSpawn = false;
-            }
-            else if (other.gameObject.CompareTag("Slow Projectile"))
-            {
-                Destroy(this.gameObject);
-
-                InvadersManager.instance.newBigInvader = null;
-
-                InvadersManager.instance.rightSpawn = false;
-            }
-            else if (other.gameObject.CompareTag("Right Wall"))
-            {
-                Destroy(this.gameObject);
-
-                InvadersManager.instance.newBigInvader = null;
-
-                InvadersManager.instance.rightSpawn = false;
-            }
-            else if (other.gameObject.CompareTag("Left Wall"))
-            {
-                Destroy(this.gameObject);
-
-                InvadersManager.instance.newBigInvader = null;
-
-                InvadersManager.instance.rightSpawn = false;
+                BigInvaderHitLeft();
             }
         }
-        else if (InvadersManager.instance.rightSpawn == false)
-        {
-            if (other.gameObject.CompareTag("Fast Projectile"))
-            {
-                Destroy(this.gameObject);
+    }
 
-                InvadersManager.instance.newBigInvader = null;
+    private void BigInvaderHitRight()
+    {
+        GameManager.instance.AddPoints(points);
 
-                InvadersManager.instance.rightSpawn = true;
-            }
-            else if (other.gameObject.CompareTag("Balanced Projectile"))
-            {
-                Destroy(this.gameObject);
+        Destroy(this.gameObject);
 
-                InvadersManager.instance.newBigInvader = null;
+        InvadersManager.instance.newBigInvader = null;
 
-                InvadersManager.instance.rightSpawn = true;
-            }
-            else if (other.gameObject.CompareTag("Slow Projectile"))
-            {
-                Destroy(this.gameObject);
+        InvadersManager.instance.rightSpawn = false;
+    }
 
-                InvadersManager.instance.newBigInvader = null;
+    private void BigInvaderHitLeft()
+    {
+        GameManager.instance.AddPoints(points);
 
-                InvadersManager.instance.rightSpawn = true;
-            }
-            else if (other.gameObject.CompareTag("Right Wall"))
-            {
-                Destroy(this.gameObject);
+        Destroy(this.gameObject);
 
-                InvadersManager.instance.newBigInvader = null;
+        InvadersManager.instance.newBigInvader = null;
 
-                InvadersManager.instance.rightSpawn = true;
-            }
-            else if (other.gameObject.CompareTag("Left Wall"))
-            {
-                Destroy(this.gameObject);
-
-                InvadersManager.instance.newBigInvader = null;
-
-                InvadersManager.instance.rightSpawn = true;
-            }
-        }
-
-
+        InvadersManager.instance.rightSpawn = true;
     }
 }

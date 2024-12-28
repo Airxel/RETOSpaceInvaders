@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class CanvasManager : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
     [SerializeField]
     GameObject mainMenu, gameOverMenu, victoryMenu, menuBeams, selectionFastShipCollection, selectionBalancedShipCollection, selectionSlowShipCollection;
@@ -13,7 +13,7 @@ public class CanvasManager : MonoBehaviour
     [SerializeField]
     public TextMeshProUGUI scoreNumber, highScoreNumber, lifesNumber;
 
-    public GameObject playerSelection, playerSelectionUI, informationUI, fastShipCollection, balancedShipCollection, slowShipCollection, mainShipCollection, enemiesSpawner, sheltersCollection, bigInvaderSpawner;
+    public GameObject playerSelection, playerSelectionUI, informationUI, fastShipCollection, balancedShipCollection, slowShipCollection, mainShipCollection, enemiesSpawner, sheltersCollection;
 
     [SerializeField]
     public int lifes = 3;
@@ -21,14 +21,16 @@ public class CanvasManager : MonoBehaviour
     private float score = 0f;
     private float highScore = 0f;
 
+    public static bool isRespawning = false;
+
     //Singleton
-    public static CanvasManager instance;
+    public static GameManager instance;
 
     private void Awake()
     {
-        if (CanvasManager.instance == null)
+        if (GameManager.instance == null)
         {
-            CanvasManager.instance = this;
+            GameManager.instance = this;
         }
         else
         {

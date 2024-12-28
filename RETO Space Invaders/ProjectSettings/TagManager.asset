@@ -19,6 +19,7 @@ TagManager:
   - Slow Projectile
   - Player Projectile
   - Bottom Wall
+  - Big Invader
   layers:
   - Default
   - TransparentFX

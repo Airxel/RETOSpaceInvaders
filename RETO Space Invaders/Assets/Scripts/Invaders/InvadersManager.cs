@@ -85,7 +85,10 @@ public class InvadersManager : MonoBehaviour
     [SerializeField]
     float bigInvaderSpawnPosY = 80f;
 
-    private float lastSpawnTimer = 0f;
+    [SerializeField]
+    private float lastSpawnTimer;
+
+    [SerializeField]
     private float nextSpawnTimer;
 
     [SerializeField]
@@ -156,54 +159,54 @@ public class InvadersManager : MonoBehaviour
             Debug.Log("ALL DEAD!");
         }
 
-        lastProjectileTimer = lastProjectileTimer + Time.deltaTime;
-
-        if (lastProjectileTimer >= nextProjectileTimer)
+        if (!GameManager.isRespawning)
         {
-            LastActiveInvaderShooting();
+            lastProjectileTimer = lastProjectileTimer + Time.deltaTime;
 
-            lastProjectileTimer = 0f;
-            nextProjectileTimer = Random.Range(minShootingSeconds, maxShootingSeconds);
-        }
-
-        InvadersSpeed();
-
-        InvadersLateralMovement();
-
-        if (newBigInvader == null)
-        {
-            lastSpawnTimer = lastSpawnTimer + Time.deltaTime;
-
-            Debug.Log("Timer" + lastSpawnTimer);
-
-            if (lastSpawnTimer >= nextSpawnTimer && rightSpawn)
+            if (lastProjectileTimer >= nextProjectileTimer)
             {
-                BigInvaderRightSpawn();
+                LastActiveInvaderShooting();
 
-                lastSpawnTimer = 0f;
-                nextSpawnTimer = Random.Range(minBigSpawnSeconds, maxBigSpawnSeconds);
+                lastProjectileTimer = 0f;
+                nextProjectileTimer = Random.Range(minShootingSeconds, maxShootingSeconds);
             }
-            else if (lastSpawnTimer >= nextSpawnTimer && !rightSpawn)
+
+            InvadersSpeed();
+
+            InvadersLateralMovement();
+
+            if (newBigInvader == null)
             {
-                BigInvaderLeftSpawn();
+                lastSpawnTimer = lastSpawnTimer + Time.deltaTime;
 
-                lastSpawnTimer = 0f;
-                nextSpawnTimer = Random.Range(minBigSpawnSeconds, maxBigSpawnSeconds);
+                if (lastSpawnTimer >= nextSpawnTimer && rightSpawn)
+                {
+                    BigInvaderRightSpawn();
+
+                    lastSpawnTimer = 0f;
+                    nextSpawnTimer = Random.Range(minBigSpawnSeconds, maxBigSpawnSeconds);
+                }
+                else if (lastSpawnTimer >= nextSpawnTimer && !rightSpawn)
+                {
+                    BigInvaderLeftSpawn();
+
+                    lastSpawnTimer = 0f;
+                    nextSpawnTimer = Random.Range(minBigSpawnSeconds, maxBigSpawnSeconds);
+                }
             }
-        }
 
-        if (newBigInvader != null)
-        {
-            if (rightSpawn)
+            if (newBigInvader != null)
             {
-                newBigInvader.transform.Translate(Vector3.right * bigInvaderSpeed * Time.deltaTime);
+                if (rightSpawn)
+                {
+                    newBigInvader.transform.Translate(Vector3.right * bigInvaderSpeed * Time.deltaTime);
+                }
+                else if (!rightSpawn)
+                {
+                    newBigInvader.transform.Translate(Vector3.left * bigInvaderSpeed * Time.deltaTime);
+                }
             }
-            else if (!rightSpawn)
-            {
-                newBigInvader.transform.Translate(Vector3.left * bigInvaderSpeed * Time.deltaTime);
-            }
-        }
-
+        }  
     }
 
     private void InvadersSpawn()

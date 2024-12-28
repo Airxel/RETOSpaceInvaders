@@ -532,7 +532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 5
-  points: 500
+  points: 50
   fastProjectileDamage: 1
   balancedProjectileDamage: 2
   slowProjectileDamage: 3
@@ -2107,7 +2107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 3
-  points: 300
+  points: 30
   fastProjectileDamage: 1
   balancedProjectileDamage: 2
   slowProjectileDamage: 3
@@ -2496,6 +2496,10 @@ MonoBehaviour:
   shipMovementLimit: 80
   projectile: {fileID: 2535070997529284090, guid: e5aa3e4f21f4f2140a01b3eba23ffb53, type: 3}
   newProjectile: {fileID: 0}
+  shootingDelayTime: 1
+  shootingDelayTimer: 1
+  respawnTime: 3
+  respawnTimer: 0
 --- !u!65 &410773886
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2578,15 +2582,17 @@ MonoBehaviour:
   invadersCount: 0
   invadersSpeed: 2.5
   invadersSpeedAcceleration: 0
-  accelerationFactor: 0.2
+  accelerationFactor: 2
   moveDownDistance: 1.5
   invadersMovementLimit: 80
   minShootingSeconds: 1
-  maxShootingSeconds: 5
+  maxShootingSeconds: 3
   bigInvader: {fileID: 784001544}
   newBigInvader: {fileID: 0}
   bigInvaderSpawnPosX: -100
   bigInvaderSpawnPosY: 80
+  lastSpawnTimer: 0
+  nextSpawnTimer: 0
   rightSpawn: 1
   minBigSpawnSeconds: 5
   maxBigSpawnSeconds: 15
@@ -3973,7 +3979,7 @@ GameObject:
   - component: {fileID: 602751074}
   - component: {fileID: 602751075}
   m_Layer: 0
-  m_Name: CanvasManager
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4025,7 +4031,6 @@ MonoBehaviour:
   mainShipCollection: {fileID: 498203706}
   enemiesSpawner: {fileID: 435079850}
   sheltersCollection: {fileID: 198657135}
-  bigInvaderSpawner: {fileID: 0}
   lifes: 3
 --- !u!1001 &612534534
 PrefabInstance:
@@ -4564,7 +4569,7 @@ GameObject:
   - component: {fileID: 784001547}
   m_Layer: 0
   m_Name: Big Invader
-  m_TagString: Untagged
+  m_TagString: Big Invader
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4619,7 +4624,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1463c33028644f345bdf75679498ebb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newBigInvader: {fileID: 0}
+  points: 100
 --- !u!1 &787651792
 GameObject:
   m_ObjectHideFlags: 0
@@ -6413,6 +6418,10 @@ MonoBehaviour:
   shipMovementLimit: 80
   projectile: {fileID: 2535070997529284090, guid: e10359652c31c614a93c2ba449f36693, type: 3}
   newProjectile: {fileID: 0}
+  shootingDelayTime: 1
+  shootingDelayTimer: 1
+  respawnTime: 3
+  respawnTimer: 0
 --- !u!65 &1296220347
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7043,6 +7052,10 @@ MonoBehaviour:
   shipMovementLimit: 80
   projectile: {fileID: 2535070997529284090, guid: 1b9bf85712faa0445804242df8c1ea9a, type: 3}
   newProjectile: {fileID: 0}
+  shootingDelayTime: 1
+  shootingDelayTimer: 1
+  respawnTime: 3
+  respawnTimer: 0
 --- !u!65 &1369017843
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7207,7 +7220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 2
-  points: 200
+  points: 20
   fastProjectileDamage: 1
   balancedProjectileDamage: 2
   slowProjectileDamage: 3
@@ -9845,7 +9858,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 1
-  points: 100
+  points: 10
   fastProjectileDamage: 1
   balancedProjectileDamage: 2
   slowProjectileDamage: 3

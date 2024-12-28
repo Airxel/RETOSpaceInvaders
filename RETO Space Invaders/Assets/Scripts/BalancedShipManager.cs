@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 
-public class ShipManager : MonoBehaviour
+public class BalancedShipManager : MonoBehaviour
 {
     [SerializeField]
     private float speed = 75f;
@@ -16,12 +16,54 @@ public class ShipManager : MonoBehaviour
     [SerializeField]
     GameObject projectile, newProjectile;
 
+    [SerializeField]
+    private float shootingDelayTime = 1f;
+
+    [SerializeField]
+    private float shootingDelayTimer = 1f;
+
     private int lifes;
+
+    [SerializeField]
+    private float respawnTime = 3f;
+
+    [SerializeField]
+    private float respawnTimer;
+
+    private BoxCollider shipCollider;
+
+    private void Start()
+    {
+        shipCollider = GetComponent<BoxCollider>();
+    }
 
     private void Update()
     {
+        if (!GameManager.isRespawning)
+        {
+            shootingDelayTimer = shootingDelayTimer + Time.deltaTime;
+
+            if (shootingDelayTimer >= shootingDelayTime)
+            {
+                ShootingProjectile();
+            }
+        }
+        else if (GameManager.isRespawning)
+        {
+            respawnTimer = respawnTimer + Time.deltaTime;
+
+            if (respawnTimer >= respawnTime)
+            {
+                GameManager.isRespawning = false;
+
+                shipCollider.enabled = true;
+
+                respawnTimer = 0f;
+            }
+        }
+
         ShipMovement();
-        ShootingProjectile();
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -34,12 +76,10 @@ public class ShipManager : MonoBehaviour
 
     private void EnemyHit()
     {
-        lifes = CanvasManager.instance.lifes - 1;
+        lifes = GameManager.instance.lifes - 1;
 
-        CanvasManager.instance.lifes = lifes;
-        CanvasManager.instance.lifesNumber.text = lifes.ToString();
-
-        Debug.Log("HIT");
+        GameManager.instance.lifes = lifes;
+        GameManager.instance.lifesNumber.text = lifes.ToString();
 
         if (lifes <= 0)
         {
@@ -47,6 +87,20 @@ public class ShipManager : MonoBehaviour
 
             this.gameObject.SetActive(false);
         }
+        else
+        {
+            PlayerRespawn();
+            Debug.Log("HIT");
+        }
+    }
+
+    private void PlayerRespawn()
+    {
+        GameManager.isRespawning = true;
+
+        shipCollider.enabled = false;
+
+        this.transform.position = new Vector3(0f, 10f, 0f);
     }
 
     private void ShootingProjectile()
@@ -54,6 +108,8 @@ public class ShipManager : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Space))
         {
             newProjectile = Instantiate(projectile, this.transform.position, Quaternion.identity);
+
+            shootingDelayTimer = 0f;
         }
     }
 

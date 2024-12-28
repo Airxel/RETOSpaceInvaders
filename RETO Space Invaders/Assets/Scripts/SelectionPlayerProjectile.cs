@@ -40,26 +40,26 @@ public class PlayerProjectile : MonoBehaviour
 
     private void PlayerSelectedUI()
     {
-        CanvasManager.instance.playerSelection.SetActive(false);
-        CanvasManager.instance.playerSelectionUI.SetActive(false);
-        CanvasManager.instance.informationUI.SetActive(true);
-        CanvasManager.instance.mainShipCollection.SetActive(false);
-        CanvasManager.instance.sheltersCollection.SetActive(true);
-        CanvasManager.instance.enemiesSpawner.SetActive(true);
+        GameManager.instance.playerSelection.SetActive(false);
+        GameManager.instance.playerSelectionUI.SetActive(false);
+        GameManager.instance.informationUI.SetActive(true);
+        GameManager.instance.mainShipCollection.SetActive(false);
+        GameManager.instance.sheltersCollection.SetActive(true);
+        GameManager.instance.enemiesSpawner.SetActive(true);
     }
 
     private void FastShipSelected()
     {
-        CanvasManager.instance.fastShipCollection.SetActive(true); 
+        GameManager.instance.fastShipCollection.SetActive(true); 
     }
 
     private void BalancedShipSelected()
     {
-        CanvasManager.instance.balancedShipCollection.SetActive(true);
+        GameManager.instance.balancedShipCollection.SetActive(true);
     }
 
     private void SlowShipSelected()
     {
-        CanvasManager.instance.slowShipCollection.SetActive(true);
+        GameManager.instance.slowShipCollection.SetActive(true);
     }
 }

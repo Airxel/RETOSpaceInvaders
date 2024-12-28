@@ -14,15 +14,10 @@ public class GameplayPlayerProjectile : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Enemy"))
-        {
-            Destroy(this.gameObject);
-        }
-        else if (other.gameObject.CompareTag("Top Wall"))
-        {
-            Destroy(this.gameObject);
-        }
-        else if (other.gameObject.CompareTag("Shelter"))
+        if (other.gameObject.CompareTag("Enemy") || 
+            other.gameObject.CompareTag("Top Wall") || 
+            other.gameObject.CompareTag("Shelter") ||
+            other.gameObject.CompareTag("Big Invader"))
         {
             Destroy(this.gameObject);
         }

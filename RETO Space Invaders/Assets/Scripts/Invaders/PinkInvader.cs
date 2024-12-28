@@ -8,7 +8,7 @@ public class PinkInvader : MonoBehaviour
     private int hitPoints = 3;
 
     [SerializeField]
-    private float points = 300f;
+    private float points = 30f;
 
     [SerializeField]
     private int fastProjectileDamage = 1;
@@ -41,7 +41,7 @@ public class PinkInvader : MonoBehaviour
 
         if (hitPoints <= 0)
         {
-            CanvasManager.instance.AddPoints(points);
+            GameManager.instance.AddPoints(points);
             this.gameObject.SetActive(false);
         }
     }
@@ -52,7 +52,7 @@ public class PinkInvader : MonoBehaviour
 
         if (hitPoints <= 0)
         {
-            CanvasManager.instance.AddPoints(points);
+            GameManager.instance.AddPoints(points);
             this.gameObject.SetActive(false);
         }
     }
@@ -63,7 +63,7 @@ public class PinkInvader : MonoBehaviour
 
         if (hitPoints <= 0)
         {
-            CanvasManager.instance.AddPoints(points);
+            GameManager.instance.AddPoints(points);
             this.gameObject.SetActive(false);
         }
     }
