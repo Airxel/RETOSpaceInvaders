@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     [SerializeField]
-    GameObject mainMenu, gameOverMenu, victoryMenu, menuBeams, selectionFastShipCollection, selectionBalancedShipCollection, selectionSlowShipCollection;
+    GameObject mainMenu, gameOverMenu, victoryMenu, volumeMenu, selectionFastShipCollection, selectionBalancedShipCollection, selectionSlowShipCollection;
 
     [SerializeField]
     public TextMeshProUGUI scoreNumber, highScoreNumber, lifesNumber;
@@ -48,8 +48,8 @@ public class GameManager : MonoBehaviour
         scoreNumber.text = score.ToString("00000");
         lifesNumber.text = lifes.ToString();
 
-        LeanTween.moveX(menuBeams.GetComponent<RectTransform>(), 0f, 1f).setEase(LeanTweenType.easeInSine);
-        LeanTween.moveX(mainMenu.GetComponent<RectTransform>(), 0f, 1.25f).setEase(LeanTweenType.easeInSine);
+        mainMenu.SetActive(true);
+        LeanTween.moveY(mainMenu.GetComponent<RectTransform>(), -25f, 1.25f).setEase(LeanTweenType.easeInOutSine).setLoopPingPong();
     }
 
     public void AddPoints(float points)
@@ -75,7 +75,6 @@ public class GameManager : MonoBehaviour
     public void PlayIsClicked()
     {
         mainMenu.SetActive(false);
-        menuBeams.SetActive(false);
 
         playerSelection.SetActive(true);
         playerSelectionUI.SetActive(true);
@@ -83,5 +82,28 @@ public class GameManager : MonoBehaviour
         LeanTween.moveY(selectionFastShipCollection, 55f, 1f).setEase(LeanTweenType.easeInOutSine).setLoopPingPong();
         LeanTween.moveY(selectionBalancedShipCollection, 55f, 1.25f).setEase(LeanTweenType.easeInOutSine).setLoopPingPong();
         LeanTween.moveY(selectionSlowShipCollection, 55f, 1.5f).setEase(LeanTweenType.easeInOutSine).setLoopPingPong();
+    }
+
+    public void OptionsIsClicked()
+    {
+        LeanTween.moveX(volumeMenu.GetComponent<RectTransform>(), 450f, 1f).setEase(LeanTweenType.easeInSine);
+        LeanTween.moveX(mainMenu.GetComponent<RectTransform>(), -150f, 1f).setEase(LeanTweenType.easeOutSine);
+    }
+
+    public void XIsClicked()
+    {
+        LeanTween.moveX(volumeMenu.GetComponent<RectTransform>(), 0f, 1f).setEase(LeanTweenType.easeOutSine);
+        LeanTween.moveX(mainMenu.GetComponent<RectTransform>(), 0f, 1.25f).setEase(LeanTweenType.easeInSine);
+    }
+
+    public void QuitIsClicked()
+    {
+        Debug.Log("Saliendo...");
+        Application.Quit();
+
+#if UNITY_EDITOR
+        // Si estás en el Editor, para simular el cierre:
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
     }
 }

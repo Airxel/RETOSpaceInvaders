@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Inspector
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 101
+  controlID: 43
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -587,9 +587,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: b0faffff
-      m_LastClickedID: -1360
-      m_ExpandedIDs: 2cfbffffe25b00001e5c00003c5d00009a5d0000e65d0000bc5e0000c05e0000
+      m_SelectedIDs: 3a5e0000
+      m_LastClickedID: 24122
+      m_ExpandedIDs: bc7ffeffe085feffe285feffe685feff008bfeff028bfeff068bfeff748efeff7095feffa85cffffea98ffff88d1ffff68d3ffffa0d4ffff38f7ffff2cfbffff065c0000685c00003c5d00009a5d00009e5d0000e65d00006c5e0000765e0000925e0000bc5e0000c05e0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1138,9 +1138,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 21.956036, y: 43.747948, z: -53.8418}
+    m_Target: {x: 13.941276, y: 56.431965, z: -0.44108286}
     speed: 2
-    m_Value: {x: 15.40517, y: 44.9632, z: -53.873657}
+    m_Value: {x: 13.941276, y: 56.431965, z: -0.44108286}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1188,11 +1188,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
-    m_Value: {x: -0, y: 0, z: -0, w: -1}
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 67.60436
+    m_Target: 66.27629
     speed: 2
-    m_Value: 70.78991
+    m_Value: 66.27629
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1262,7 +1262,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs/Shelters
+    - Assets/Prefabs/Invaders
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1270,16 +1270,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs/Shelters
+  - Assets/Prefabs/Invaders
   m_LastFoldersGridSize: 64
   m_LastProjectPath: D:\Unity\RETOSpaceInvaders\RETO Space Invaders
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 60ba0000
-    m_LastClickedID: 47712
-    m_ExpandedIDs: 00000000cc620000e6620000ec62000000ca9a3b
+    m_SelectedIDs: f4620000
+    m_LastClickedID: 25332
+    m_ExpandedIDs: 00000000cc620000e662000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1335,7 +1335,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000ac8a00003e5f000000000000
+    m_ExpandedInstanceIDs: c6230000ac8a00003e5f0000000000009c630000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1359,7 +1359,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 12}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 127
