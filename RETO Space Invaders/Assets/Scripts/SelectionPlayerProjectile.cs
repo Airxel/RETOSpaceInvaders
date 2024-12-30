@@ -46,6 +46,8 @@ public class PlayerProjectile : MonoBehaviour
         GameManager.instance.mainShipCollection.SetActive(false);
         GameManager.instance.sheltersCollection.SetActive(true);
         GameManager.instance.enemiesSpawner.SetActive(true);
+
+        InvadersManager.instance.InvadersSpawn();
     }
 
     private void FastShipSelected()

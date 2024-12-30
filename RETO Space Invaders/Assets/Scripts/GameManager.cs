@@ -72,6 +72,32 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void PlayerDead()
+    {
+        InvadersManager.instance.DeactivateInvaders();
+
+        sheltersCollection.SetActive(false);
+        enemiesSpawner.SetActive(false);
+        balancedShipCollection.SetActive(false);
+        fastShipCollection.SetActive(false);
+        slowShipCollection.SetActive(false);
+
+        gameOverMenu.SetActive(true);
+        LeanTween.moveY(gameOverMenu.GetComponent<RectTransform>(), -50f, 1.25f).setEase(LeanTweenType.easeInOutSine).setLoopPingPong();
+    }
+
+    public void PlayerVictory()
+    {
+        sheltersCollection.SetActive(false);
+        enemiesSpawner.SetActive(false);
+        balancedShipCollection.SetActive(false);
+        fastShipCollection.SetActive(false);
+        slowShipCollection.SetActive(false);
+
+        victoryMenu.SetActive(true);
+        LeanTween.moveY(victoryMenu.GetComponent<RectTransform>(), -50f, 1.25f).setEase(LeanTweenType.easeInOutSine).setLoopPingPong();
+    }
+
     public void PlayIsClicked()
     {
         mainMenu.SetActive(false);
@@ -94,6 +120,33 @@ public class GameManager : MonoBehaviour
     {
         LeanTween.moveX(volumeMenu.GetComponent<RectTransform>(), 0f, 1f).setEase(LeanTweenType.easeOutSine);
         LeanTween.moveX(mainMenu.GetComponent<RectTransform>(), 0f, 1.25f).setEase(LeanTweenType.easeInSine);
+    }
+
+    public void MainMenuIsClicked()
+    {
+        SceneManager.LoadScene("Main Game");
+    }
+
+    public void ReplayIsClicked()
+    {
+        enemiesSpawner.SetActive(false);
+        InvadersManager.instance.ClearInvaders();
+
+        lifes = 3;
+        lifesNumber.text = lifes.ToString();
+
+        victoryMenu.SetActive(false);
+        gameOverMenu.SetActive(false);
+        informationUI.SetActive(false);
+
+        playerSelection.SetActive(true);
+        playerSelectionUI.SetActive(true);
+
+        mainShipCollection.SetActive(true);
+
+        LeanTween.moveY(selectionFastShipCollection, 55f, 1f).setEase(LeanTweenType.easeInOutSine).setLoopPingPong();
+        LeanTween.moveY(selectionBalancedShipCollection, 55f, 1.25f).setEase(LeanTweenType.easeInOutSine).setLoopPingPong();
+        LeanTween.moveY(selectionSlowShipCollection, 55f, 1.5f).setEase(LeanTweenType.easeInOutSine).setLoopPingPong();
     }
 
     public void QuitIsClicked()

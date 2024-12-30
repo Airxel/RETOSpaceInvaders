@@ -83,9 +83,8 @@ public class BalancedShipManager : MonoBehaviour
 
         if (lifes <= 0)
         {
+            GameManager.instance.PlayerDead();
             Debug.Log("DEAD");
-
-            this.gameObject.SetActive(false);
         }
         else
         {
@@ -97,8 +96,6 @@ public class BalancedShipManager : MonoBehaviour
     private void PlayerRespawn()
     {
         GameManager.isRespawning = true;
-
-        shipCollider.enabled = false;
 
         this.transform.position = new Vector3(0f, 10f, 0f);
     }

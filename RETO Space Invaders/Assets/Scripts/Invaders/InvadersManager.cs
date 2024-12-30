@@ -35,7 +35,7 @@ public class InvadersManager : MonoBehaviour
     [SerializeField]
     GameObject[] invaders;
 
-    List<List<GameObject>> matrizInvaders = new List<List<GameObject>>();
+    public List<List<GameObject>> matrizInvaders = new List<List<GameObject>>();
 
     [SerializeField]
     private int invadersCount = 0;
@@ -103,6 +103,8 @@ public class InvadersManager : MonoBehaviour
     [SerializeField]
     private float bigInvaderSpeed = 10f;
 
+    public bool gameIsOver = false;
+
     //Singleton
     public static InvadersManager instance;
 
@@ -120,12 +122,9 @@ public class InvadersManager : MonoBehaviour
 
     private void Start()
     {
-        InvadersSpawn();
-
         nextSpawnTimer = Random.Range(minBigSpawnSeconds, maxBigSpawnSeconds);
 
         nextProjectileTimer = Random.Range(minShootingSeconds, maxShootingSeconds);
-
     }
     private void Update()
     {
@@ -156,6 +155,10 @@ public class InvadersManager : MonoBehaviour
 
         if (invadersCount == 0)
         {
+            gameIsOver = true;
+            newBigInvader.SetActive(false);
+
+            GameManager.instance.PlayerVictory();
             Debug.Log("ALL DEAD!");
         }
 
@@ -175,7 +178,7 @@ public class InvadersManager : MonoBehaviour
 
             InvadersLateralMovement();
 
-            if (newBigInvader == null)
+            if (newBigInvader == null && gameIsOver == false)
             {
                 lastSpawnTimer = lastSpawnTimer + Time.deltaTime;
 
@@ -195,7 +198,7 @@ public class InvadersManager : MonoBehaviour
                 }
             }
 
-            if (newBigInvader != null)
+            if (newBigInvader != null && gameIsOver == false)
             {
                 if (rightSpawn)
                 {
@@ -209,8 +212,10 @@ public class InvadersManager : MonoBehaviour
         }  
     }
 
-    private void InvadersSpawn()
+    public void InvadersSpawn()
     {
+        matrizInvaders.Clear();
+
         for (int i = 0; i < totalColumns; i++)
         {
             matrizInvaders.Add(new List<GameObject>());
@@ -239,7 +244,7 @@ public class InvadersManager : MonoBehaviour
         {
             for (int j = 0; j < totalRow; j++)
             {
-                if (matrizInvaders[i][j].activeSelf)
+                if (matrizInvaders[i][j].activeSelf == true)
                 {
                     invadersCount = invadersCount + 1;
                 }
@@ -256,45 +261,63 @@ public class InvadersManager : MonoBehaviour
 
         invadersSpeedAcceleration = invadersSpeed + (totalColumns * totalRow - invadersCount) * accelerationFactor;
 
-        //speedAcceleration = Mathf.Clamp(speed, 2.5f, 10f);
+        invadersSpeedAcceleration = Mathf.Clamp(invadersSpeedAcceleration, 2.5f, 7.5f);
     }
 
     private void InvadersLateralMovement()
     {
         limitReached = false;
 
+        // Encuentra los extremos activos
+        int activeLeftColumn = -1;
+        int activeRightColumn = -1;
+
         for (int i = 0; i < totalColumns; i++)
         {
             for (int j = 0; j < totalRow; j++)
             {
+                if (matrizInvaders[i][j].activeSelf == true)
+                {
+                    if (activeLeftColumn == -1)
+                    {
+                        activeLeftColumn = i; // Primer invader activo a la izquierda
+                    }
+
+                    activeRightColumn = i; // Último invader activo a la derecha
+                }
+
                 GameObject invader = matrizInvaders[i][j];
 
-                if (movingRight)
+                if (invader.activeSelf == true)
                 {
-                    invadersMovement = invadersSpeedAcceleration * Time.deltaTime;
+                    if (movingRight)
+                    {
+                        invadersMovement = invadersSpeedAcceleration * Time.deltaTime;
+                    }
+                    else
+                    {
+                        invadersMovement = -invadersSpeedAcceleration * Time.deltaTime;
+                    }
+
+                    Vector3 newInvadersMovement = invader.transform.position;
+
+                    newInvadersMovement.x += invadersMovement;
+
+                    // Detectar si el límite se alcanza para los extremos
+                    if (i == activeRightColumn && newInvadersMovement.x >= invadersMovementLimit && movingRight)
+                    {
+                        limitReached = true;
+                    }
+                    else if (i == activeLeftColumn && newInvadersMovement.x <= -invadersMovementLimit && !movingRight)
+                    {
+                        limitReached = true;
+                    }
+
+                    invader.transform.position = newInvadersMovement;
                 }
-                else if (!movingRight)
-                {
-                    invadersMovement = -invadersSpeedAcceleration * Time.deltaTime;
-                }
-
-                Vector3 newInvadersMovement = invader.transform.position;
-
-                newInvadersMovement.x = newInvadersMovement.x + invadersMovement;
-
-                if (newInvadersMovement.x >= invadersMovementLimit && movingRight)
-                {
-                    limitReached = true;
-                }
-                else if (newInvadersMovement.x <= -invadersMovementLimit && !movingRight)
-                {
-                    limitReached = true;
-                }
-
-                invader.transform.position = newInvadersMovement;
-
             }
         }
+
         if (limitReached)
         {
             InvadersDownMovement();
@@ -341,6 +364,52 @@ public class InvadersManager : MonoBehaviour
 
             //Debug.Log("Ultimo elemento activo " + randX + ", " + activeEnemy);
         }
+    }
+
+    public void ClearInvaders()
+    {
+        for (int i = 0; i < totalColumns; i++)
+        {
+            for (int j = 0; j < totalRow; j++)
+            {
+                if (matrizInvaders[i][j] != null)
+                {
+                    Destroy(matrizInvaders[i][j]);
+                }
+            }
+        }
+
+        matrizInvaders.Clear();
+
+        if (newBigInvader != null)
+        {
+            Destroy(newBigInvader);
+        }
+
+        newBigInvader = null;
+        movingRight = true;
+        gameIsOver = false;
+    }
+
+    public void DeactivateInvaders()
+    {
+        for (int i = 0; i < totalColumns; i++)
+        {
+            for (int j = 0; j < totalRow; j++)
+            {
+                if (matrizInvaders[i][j] != null)
+                {
+                    matrizInvaders[i][j].SetActive(false);
+                }
+            }
+        }
+
+        if (newBigInvader != null)
+        {
+            newBigInvader.SetActive(false);
+        }
+
+        gameIsOver = true;
     }
 
     private void BigInvaderRightSpawn()
