@@ -11,12 +11,15 @@ public class GameManager : MonoBehaviour
     GameObject mainMenu, gameOverMenu, victoryMenu, volumeMenu, selectionFastShipCollection, selectionBalancedShipCollection, selectionSlowShipCollection;
 
     [SerializeField]
-    public TextMeshProUGUI scoreNumber, highScoreNumber, lifesNumber;
+    public TextMeshProUGUI scoreNumber, highScoreNumber, livesNumber;
 
     public GameObject playerSelection, playerSelectionUI, informationUI, fastShipCollection, balancedShipCollection, slowShipCollection, mainShipCollection, enemiesSpawner, sheltersCollection;
 
     [SerializeField]
-    public int lifes = 3;
+    private int initialLives = 3;
+
+    [SerializeField]
+    public int lives;
 
     private float score = 0f;
     private float highScore = 0f;
@@ -40,13 +43,15 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        lives = initialLives;
+
         //Se llama al valor guardado en el PlayerPrefs para la mayor puntuación
         highScore = PlayerPrefs.GetFloat("High Score", 0);
 
         //Se pone ese valor en el texto te la UI
         highScoreNumber.text = highScore.ToString("00000");
         scoreNumber.text = score.ToString("00000");
-        lifesNumber.text = lifes.ToString();
+        livesNumber.text = lives.ToString();
 
         mainMenu.SetActive(true);
         LeanTween.moveY(mainMenu.GetComponent<RectTransform>(), -25f, 1.25f).setEase(LeanTweenType.easeInOutSine).setLoopPingPong();
@@ -132,8 +137,11 @@ public class GameManager : MonoBehaviour
         enemiesSpawner.SetActive(false);
         InvadersManager.instance.ClearInvaders();
 
-        lifes = 3;
-        lifesNumber.text = lifes.ToString();
+        lives = initialLives;
+        livesNumber.text = lives.ToString();
+
+        score = 0f;
+        scoreNumber.text = score.ToString("00000");
 
         victoryMenu.SetActive(false);
         gameOverMenu.SetActive(false);
@@ -158,5 +166,10 @@ public class GameManager : MonoBehaviour
         // Si estás en el Editor, para simular el cierre:
         UnityEditor.EditorApplication.isPlaying = false;
 #endif
+    }
+
+    private void DeleteHighScore()
+    {
+        PlayerPrefs.DeleteKey("High Score");
     }
 }

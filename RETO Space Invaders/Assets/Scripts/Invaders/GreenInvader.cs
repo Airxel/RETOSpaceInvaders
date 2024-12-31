@@ -41,6 +41,8 @@ public class GreenInvader : MonoBehaviour
 
         if (hitPoints <= 0)
         {
+            SoundsManager.instance.PlaySound(SoundsManager.instance.invaderDeadSound);
+
             GameManager.instance.AddPoints(points);
             this.gameObject.SetActive(false);
         }
@@ -52,6 +54,8 @@ public class GreenInvader : MonoBehaviour
 
         if (hitPoints <= 0)
         {
+            SoundsManager.instance.PlaySound(SoundsManager.instance.invaderDeadSound);
+
             GameManager.instance.AddPoints(points);
             this.gameObject.SetActive(false);
         }
@@ -63,6 +67,8 @@ public class GreenInvader : MonoBehaviour
 
         if (hitPoints <= 0)
         {
+            SoundsManager.instance.PlaySound(SoundsManager.instance.invaderDeadSound);
+
             GameManager.instance.AddPoints(points);
             this.gameObject.SetActive(false);
         }

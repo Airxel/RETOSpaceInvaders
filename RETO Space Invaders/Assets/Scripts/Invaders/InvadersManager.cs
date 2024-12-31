@@ -159,7 +159,6 @@ public class InvadersManager : MonoBehaviour
             newBigInvader.SetActive(false);
 
             GameManager.instance.PlayerVictory();
-            Debug.Log("ALL DEAD!");
         }
 
         if (!GameManager.isRespawning)
@@ -362,6 +361,8 @@ public class InvadersManager : MonoBehaviour
 
             newProjectile = Instantiate(projectile, activeEnemyPosition, projectile.transform.rotation);
 
+            SoundsManager.instance.PlaySound(SoundsManager.instance.invaderShootingSound);
+
             //Debug.Log("Ultimo elemento activo " + randX + ", " + activeEnemy);
         }
     }
@@ -416,12 +417,14 @@ public class InvadersManager : MonoBehaviour
     {
         bigInvaderSpawnPosition = new Vector3(bigInvaderSpawnPosX, bigInvaderSpawnPosY, 0f);
         newBigInvader = Instantiate(bigInvader, bigInvaderSpawnPosition, Quaternion.identity);
+        SoundsManager.instance.bigInvaderSoundSource.Play();
     }
 
     private void BigInvaderLeftSpawn()
     {
         bigInvaderSpawnPosition = new Vector3(-bigInvaderSpawnPosX, bigInvaderSpawnPosY, 0f);
         newBigInvader = Instantiate(bigInvader, bigInvaderSpawnPosition, Quaternion.identity);
+        SoundsManager.instance.bigInvaderSoundSource.Play();
     }
 
     private void InvaderAnimation(GameObject invader)

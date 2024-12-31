@@ -9,12 +9,26 @@ public class BigInvader : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Fast Projectile") ||
-            other.gameObject.CompareTag("Balanced Projectile") ||
-            other.gameObject.CompareTag("Slow Projectile") ||
-            other.gameObject.CompareTag("Right Wall") ||
+        if (other.gameObject.CompareTag("Right Wall") ||
             other.gameObject.CompareTag("Left Wall"))
         {
+            if (InvadersManager.instance.rightSpawn)
+            {
+                BigInvaderHitRight();
+            }
+            else
+            {
+                BigInvaderHitLeft();
+            }
+        }
+        if (other.gameObject.CompareTag("Fast Projectile") ||
+            other.gameObject.CompareTag("Balanced Projectile") ||
+            other.gameObject.CompareTag("Slow Projectile"))
+        {
+            SoundsManager.instance.PlaySound(SoundsManager.instance.invaderDeadSound);
+
+            GameManager.instance.AddPoints(points);
+
             if (InvadersManager.instance.rightSpawn)
             {
                 BigInvaderHitRight();
@@ -28,8 +42,6 @@ public class BigInvader : MonoBehaviour
 
     private void BigInvaderHitRight()
     {
-        GameManager.instance.AddPoints(points);
-
         Destroy(this.gameObject);
 
         InvadersManager.instance.newBigInvader = null;
@@ -39,8 +51,6 @@ public class BigInvader : MonoBehaviour
 
     private void BigInvaderHitLeft()
     {
-        GameManager.instance.AddPoints(points);
-
         Destroy(this.gameObject);
 
         InvadersManager.instance.newBigInvader = null;

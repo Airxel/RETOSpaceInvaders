@@ -77,9 +77,11 @@ public class PlayerSelection : MonoBehaviour
 
     private void ShootingProjectile()
     {
-        if (Input.GetKeyUp(KeyCode.Space) && newProjectile == null && mainShipCollection.activeSelf)
+        if (Input.GetButtonUp("Shoot") && newProjectile == null && mainShipCollection.activeSelf)
         {
             newProjectile = Instantiate(projectile, mainShipCollection.transform.position, Quaternion.identity);
+
+            SoundsManager.instance.PlaySound(SoundsManager.instance.playerShootingSound);
         }  
     }
 }

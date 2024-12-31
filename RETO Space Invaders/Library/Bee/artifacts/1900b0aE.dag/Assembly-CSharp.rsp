@@ -418,6 +418,7 @@
 "Assets/Scripts/SelectionPlayerProjectile.cs"
 "Assets/Scripts/SheltersManager.cs"
 "Assets/Scripts/SlowShipManager.cs"
+"Assets/Scripts/SoundsManager.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"

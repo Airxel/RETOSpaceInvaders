@@ -21,7 +21,7 @@ public class FastShipManager : MonoBehaviour
     [SerializeField]
     private float shootingDelayTimer = 1f;
 
-    private int lifes;
+    private int lives;
 
     [SerializeField]
     private float respawnTime = 3f;
@@ -74,22 +74,20 @@ public class FastShipManager : MonoBehaviour
 
     private void EnemyHit()
     {
-        lifes = GameManager.instance.lifes - 1;
+        lives = GameManager.instance.lives - 1;
 
-        GameManager.instance.lifes = lifes;
-        GameManager.instance.lifesNumber.text = lifes.ToString();
+        GameManager.instance.lives = lives;
+        GameManager.instance.livesNumber.text = lives.ToString();
 
-        Debug.Log("HIT");
+        SoundsManager.instance.PlaySound(SoundsManager.instance.playerDeadSound);
 
-        if (lifes <= 0)
+        if (lives <= 0)
         {
             GameManager.instance.PlayerDead();
-            Debug.Log("DEAD");
         }
         else
         {
             PlayerRespawn();
-            Debug.Log("HIT");
         }
     }
 
@@ -102,9 +100,11 @@ public class FastShipManager : MonoBehaviour
 
     private void ShootingProjectile()
     {
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (Input.GetButtonUp("Shoot"))
         {
             newProjectile = Instantiate(projectile, this.transform.position, Quaternion.identity);
+
+            SoundsManager.instance.PlaySound(SoundsManager.instance.playerShootingSound);
 
             shootingDelayTimer = 0f;
         }
