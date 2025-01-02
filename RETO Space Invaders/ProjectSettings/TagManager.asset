@@ -22,6 +22,7 @@ TagManager:
   - Big Invader
   - Left Limit
   - Right Limit
+  - Player Ship
   layers:
   - Default
   - TransparentFX

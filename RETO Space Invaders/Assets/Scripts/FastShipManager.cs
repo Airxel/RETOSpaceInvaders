@@ -29,11 +29,32 @@ public class FastShipManager : MonoBehaviour
     [SerializeField]
     private float respawnTimer;
 
-    private BoxCollider shipCollider;
+    [SerializeField]
+    private bool invertMovement = false;
+    private bool fasterShooting = false;
+    private bool fasterMovement = false;
+
+    [SerializeField]
+    private float fasterMovementMultiplier = 2f;
+    private float baseSpeed;
+
+    [SerializeField]
+    private float fasterShootingMultiplier = 0.5f;
+    private float baseShootingDelayTime;
+
+    [SerializeField]
+    private float invertMovementTimer;
+
+    [SerializeField]
+    private float fasterShootingTimer;
+
+    [SerializeField]
+    private float fasterMovementTimer;
 
     private void Start()
     {
-        shipCollider = GetComponent<BoxCollider>();
+        baseSpeed = speed;
+        baseShootingDelayTime = shootingDelayTime;
     }
 
     private void Update()
@@ -41,6 +62,19 @@ public class FastShipManager : MonoBehaviour
         if (!GameManager.isRespawning)
         {
             shootingDelayTimer = shootingDelayTimer + Time.deltaTime;
+
+            if (fasterShooting)
+            {
+                shootingDelayTime = baseShootingDelayTime * fasterShootingMultiplier;
+
+                fasterShootingTimer = fasterShootingTimer - Time.deltaTime;
+
+                if (fasterShootingTimer <= 0f)
+                {
+                    shootingDelayTime = baseShootingDelayTime;
+                    fasterShooting = false;
+                }
+            }
 
             if (shootingDelayTimer >= shootingDelayTime)
             {
@@ -55,8 +89,6 @@ public class FastShipManager : MonoBehaviour
             {
                 GameManager.isRespawning = false;
 
-                shipCollider.enabled = true;
-
                 respawnTimer = 0f;
             }
         }
@@ -69,6 +101,13 @@ public class FastShipManager : MonoBehaviour
         if (other.gameObject.CompareTag("Enemy Projectile"))
         {
             EnemyHit();
+        }
+
+        IPowerUpsInterface powerUp = other.GetComponent<IPowerUpsInterface>();
+
+        if (powerUp != null)
+        {
+            powerUp.PickUp();
         }
     }
 
@@ -114,10 +153,53 @@ public class FastShipManager : MonoBehaviour
     {
         shipMovement = Input.GetAxis("Horizontal");
 
+        if (fasterMovement)
+        {
+            speed = baseSpeed * fasterMovementMultiplier;
+
+            fasterMovementTimer = fasterMovementTimer - Time.deltaTime;
+
+            if (fasterMovementTimer <= 0f)
+            {
+                speed = baseSpeed;
+                fasterMovement = false;
+            }
+        }
+
+        if (invertMovement)
+        {
+            shipMovement = shipMovement * -1f;
+
+            invertMovementTimer = invertMovementTimer - Time.deltaTime;
+
+            if (invertMovementTimer <= 0f)
+            {
+                invertMovement = false;
+            }
+        }
+
         Vector3 newShipMovement = this.transform.position + new Vector3(shipMovement, 0f, 0f) * speed * Time.deltaTime;
 
         newShipMovement.x = Mathf.Clamp(newShipMovement.x, -shipMovementLimit, shipMovementLimit);
 
         this.transform.position = newShipMovement;
+    }
+
+    public void InvertMovement(float powerUpDuration)
+    {
+        invertMovement = true;
+        invertMovementTimer = powerUpDuration;
+    }
+
+    public void FasterMovement(float powerUpDuration)
+    {
+        fasterMovement = true;
+        fasterMovementTimer = powerUpDuration;
+    }
+
+    public void FasterShotSpeed(float powerUpDuration)
+    {
+        fasterShooting = true;
+        fasterShootingTimer = powerUpDuration;
     }
 }

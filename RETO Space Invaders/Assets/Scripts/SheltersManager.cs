@@ -82,4 +82,16 @@ public class SheltersManager : MonoBehaviour
             this.gameObject.SetActive(false);
         }
     }
+
+    public void SheltersHealing()
+    {
+        hitPoints = 15;
+
+        fullShelter.gameObject.SetActive(true);
+        dyingShelter.gameObject.SetActive(false);
+        earthShelter.gameObject.SetActive(false);
+
+        shelterCollider.size = new Vector3(30.5f, 16.5f, 1f);
+        shelterCollider.center = new Vector3(0f, 1f, 0f);
+    }
 }
