@@ -156,7 +156,11 @@ public class InvadersManager : MonoBehaviour
         if (invadersCount == 0)
         {
             gameIsOver = true;
-            newBigInvader.SetActive(false);
+            
+            if (newBigInvader != null)
+            {
+                newBigInvader.SetActive(false);
+            }
 
             GameManager.instance.PlayerVictory();
         }

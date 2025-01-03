@@ -19,6 +19,15 @@ public class YellowInvader : MonoBehaviour
     [SerializeField]
     private int slowProjectileDamage = 3;
 
+    [SerializeField]
+    private GameObject[] powerUps;
+
+    [SerializeField]
+    private int spawnChance = 25;
+
+    [SerializeField]
+    private int randomSpawn;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Fast Projectile"))
@@ -41,10 +50,7 @@ public class YellowInvader : MonoBehaviour
 
         if (hitPoints <= 0)
         {
-            SoundsManager.instance.PlaySound(SoundsManager.instance.invaderDeadSound);
-
-            GameManager.instance.AddPoints(points);
-            this.gameObject.SetActive(false);
+            DeadInvader();
         }
     }
 
@@ -54,10 +60,7 @@ public class YellowInvader : MonoBehaviour
 
         if (hitPoints <= 0)
         {
-            SoundsManager.instance.PlaySound(SoundsManager.instance.invaderDeadSound);
-
-            GameManager.instance.AddPoints(points);
-            this.gameObject.SetActive(false);
+            DeadInvader();
         }
     }
 
@@ -67,10 +70,29 @@ public class YellowInvader : MonoBehaviour
 
         if (hitPoints <= 0)
         {
-            SoundsManager.instance.PlaySound(SoundsManager.instance.invaderDeadSound);
-
-            GameManager.instance.AddPoints(points);
-            this.gameObject.SetActive(false);
+            DeadInvader();
         }
+    }
+
+    private void SpawnPowerUp()
+    {
+        randomSpawn = Random.Range(0, 100);
+
+        if (randomSpawn < spawnChance)
+        {
+            int randomIndex = Random.Range(0, powerUps.Length);
+
+            Instantiate(powerUps[randomIndex], this.transform.position, Quaternion.identity);
+        }
+    }
+
+    private void DeadInvader()
+    {
+        SpawnPowerUp();
+
+        SoundsManager.instance.PlaySound(SoundsManager.instance.invaderDeadSound);
+        GameManager.instance.AddPoints(points);
+
+        this.gameObject.SetActive(false);
     }
 }

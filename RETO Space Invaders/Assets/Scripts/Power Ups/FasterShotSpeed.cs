@@ -11,7 +11,7 @@ public class FasterShotSpeed : MonoBehaviour, IPowerUpsInterface
     {
         Debug.Log("Aumentando Velocidad de Disparo");
 
-        GameObject player = GameObject.FindWithTag("Player Ship");
+        GameObject player = FindPlayerShip();
 
         if (player != null)
         {
@@ -38,5 +38,34 @@ public class FasterShotSpeed : MonoBehaviour, IPowerUpsInterface
         }
 
         Destroy(this.gameObject);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Bottom Wall"))
+        {
+            Destroy(this.gameObject);
+        }
+    }
+
+    private GameObject FindPlayerShip()
+    {
+        GameObject player = GameObject.FindWithTag("Fast Ship");
+
+        if (player != null)
+        {
+            return player;
+        }
+
+        player = GameObject.FindWithTag("Balanced Ship");
+
+        if (player != null)
+        {
+            return player;
+        }
+
+        player = GameObject.FindWithTag("Slow Ship");
+
+        return player;
     }
 }

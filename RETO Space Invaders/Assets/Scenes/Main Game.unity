@@ -658,6 +658,13 @@ MonoBehaviour:
   fastProjectileDamage: 1
   balancedProjectileDamage: 2
   slowProjectileDamage: 3
+  powerUps:
+  - {fileID: 7347308524300619989, guid: cb818b9c38725b84dac6199ac56ad661, type: 3}
+  - {fileID: 6716101520618588066, guid: f0e8401e96440584e91740a4496c840a, type: 3}
+  - {fileID: 2406834713763449724, guid: 6e6c9fdc9a64d3d4d933034d904fc30b, type: 3}
+  - {fileID: 6499967859190040550, guid: e4989777ee827ac4ab2dac308ba4fdf0, type: 3}
+  spawnChance: 25
+  randomSpawn: 0
 --- !u!1 &90232742
 GameObject:
   m_ObjectHideFlags: 0
@@ -2625,6 +2632,13 @@ MonoBehaviour:
   fastProjectileDamage: 1
   balancedProjectileDamage: 2
   slowProjectileDamage: 3
+  powerUps:
+  - {fileID: 7347308524300619989, guid: cb818b9c38725b84dac6199ac56ad661, type: 3}
+  - {fileID: 6716101520618588066, guid: f0e8401e96440584e91740a4496c840a, type: 3}
+  - {fileID: 2406834713763449724, guid: 6e6c9fdc9a64d3d4d933034d904fc30b, type: 3}
+  - {fileID: 6499967859190040550, guid: e4989777ee827ac4ab2dac308ba4fdf0, type: 3}
+  spawnChance: 25
+  randomSpawn: 0
 --- !u!1 &308035233
 GameObject:
   m_ObjectHideFlags: 0
@@ -3394,6 +3408,12 @@ MonoBehaviour:
   shootingDelayTimer: 1
   respawnTime: 3
   respawnTimer: 0
+  invertMovement: 0
+  fasterMovementMultiplier: 2
+  fasterShootingMultiplier: 0.5
+  invertMovementTimer: 0
+  fasterShootingTimer: 0
+  fasterMovementTimer: 0
 --- !u!65 &410773886
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8278,6 +8298,12 @@ MonoBehaviour:
   shootingDelayTimer: 1
   respawnTime: 3
   respawnTimer: 0
+  invertMovement: 0
+  fasterMovementMultiplier: 2
+  fasterShootingMultiplier: 0.5
+  invertMovementTimer: 0
+  fasterShootingTimer: 0
+  fasterMovementTimer: 0
 --- !u!65 &1296220347
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8912,6 +8938,12 @@ MonoBehaviour:
   shootingDelayTimer: 1
   respawnTime: 3
   respawnTimer: 0
+  invertMovement: 0
+  fasterMovementMultiplier: 2
+  fasterShootingMultiplier: 0.5
+  invertMovementTimer: 0
+  fasterShootingTimer: 0
+  fasterMovementTimer: 0
 --- !u!65 &1369017843
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9600,6 +9632,13 @@ MonoBehaviour:
   fastProjectileDamage: 1
   balancedProjectileDamage: 2
   slowProjectileDamage: 3
+  powerUps:
+  - {fileID: 7347308524300619989, guid: cb818b9c38725b84dac6199ac56ad661, type: 3}
+  - {fileID: 6716101520618588066, guid: f0e8401e96440584e91740a4496c840a, type: 3}
+  - {fileID: 2406834713763449724, guid: 6e6c9fdc9a64d3d4d933034d904fc30b, type: 3}
+  - {fileID: 6499967859190040550, guid: e4989777ee827ac4ab2dac308ba4fdf0, type: 3}
+  spawnChance: 25
+  randomSpawn: 0
 --- !u!1001 &1459294781
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13148,6 +13187,13 @@ MonoBehaviour:
   fastProjectileDamage: 1
   balancedProjectileDamage: 2
   slowProjectileDamage: 3
+  powerUps:
+  - {fileID: 7347308524300619989, guid: cb818b9c38725b84dac6199ac56ad661, type: 3}
+  - {fileID: 6716101520618588066, guid: f0e8401e96440584e91740a4496c840a, type: 3}
+  - {fileID: 2406834713763449724, guid: 6e6c9fdc9a64d3d4d933034d904fc30b, type: 3}
+  - {fileID: 6499967859190040550, guid: e4989777ee827ac4ab2dac308ba4fdf0, type: 3}
+  spawnChance: 25
+  randomSpawn: 0
 --- !u!1 &2085091335
 GameObject:
   m_ObjectHideFlags: 0
