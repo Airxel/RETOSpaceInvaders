@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BunkersHealing : MonoBehaviour, IPowerUpsInterface
+public class SheltersHealing : MonoBehaviour, IPowerUpsInterface
 {
     public void PickUp()
     {

@@ -43,6 +43,10 @@ public class SheltersManager : MonoBehaviour
         {
             ShelterState();
         }
+        else if (other.gameObject.CompareTag("Enemy"))
+        {
+            ShelterEnemyContact();
+        }
     }
 
     private void ShelterState()
@@ -81,6 +85,20 @@ public class SheltersManager : MonoBehaviour
 
             this.gameObject.SetActive(false);
         }
+    }
+
+    private void ShelterEnemyContact()
+    {
+        hitPoints = 0;
+
+        fullShelter.gameObject.SetActive(false);
+        dyingShelter.gameObject.SetActive(false);
+        earthShelter.gameObject.SetActive(false);
+
+        shelterCollider.size = new Vector3(30.5f, 16.5f, 1f);
+        shelterCollider.center = new Vector3(0f, 1f, 0f);
+
+        this.gameObject.SetActive(false);
     }
 
     public void SheltersHealing()

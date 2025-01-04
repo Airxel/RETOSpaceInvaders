@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     GameObject mainMenu, gameOverMenu, victoryMenu, volumeMenu, selectionFastShipCollection, selectionBalancedShipCollection, selectionSlowShipCollection;
 
     [SerializeField]
-    public TextMeshProUGUI scoreNumber, highScoreNumber, livesNumber;
+    public TextMeshProUGUI scoreNumber, highScoreNumber, livesNumber, gameOverScoreNumber, victoryScoreNumber;
 
     public GameObject playerSelection, playerSelectionUI, informationUI, fastShipCollection, balancedShipCollection, slowShipCollection, mainShipCollection, enemiesSpawner, sheltersCollection;
 
@@ -51,6 +51,8 @@ public class GameManager : MonoBehaviour
         //Se pone ese valor en el texto te la UI
         highScoreNumber.text = highScore.ToString("00000");
         scoreNumber.text = score.ToString("00000");
+        gameOverScoreNumber.text = score.ToString("00000");
+        victoryScoreNumber.text = score.ToString("00000");
         livesNumber.text = lives.ToString();
 
         mainMenu.SetActive(true);
@@ -64,6 +66,8 @@ public class GameManager : MonoBehaviour
 
         //Se ponen esos valores en los textos de la UI
         scoreNumber.text = score.ToString("00000");
+        gameOverScoreNumber.text = score.ToString("00000");
+        victoryScoreNumber.text = score.ToString("00000");
 
         if (highScore < score)
         {
@@ -132,6 +136,28 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("Main Game");
     }
 
+    public void QuitIsClicked()
+    {
+        Debug.Log("Saliendo...");
+        Application.Quit();
+
+#if UNITY_EDITOR
+        // Si estás en el Editor, para simular el cierre:
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
+    }
+
+    private void DeleteHighScore()
+    {
+        PlayerPrefs.DeleteKey("High Score");
+    }
+
+
+
+
+    /// <summary>
+    /// Prueba para un botón de restart/replay, ir a la selección de personaje sin pasar por el menú principal
+    /// </summary>
     public void ReplayIsClicked()
     {
         enemiesSpawner.SetActive(false);
@@ -155,21 +181,5 @@ public class GameManager : MonoBehaviour
         LeanTween.moveY(selectionFastShipCollection, 55f, 1f).setEase(LeanTweenType.easeInOutSine).setLoopPingPong();
         LeanTween.moveY(selectionBalancedShipCollection, 55f, 1.25f).setEase(LeanTweenType.easeInOutSine).setLoopPingPong();
         LeanTween.moveY(selectionSlowShipCollection, 55f, 1.5f).setEase(LeanTweenType.easeInOutSine).setLoopPingPong();
-    }
-
-    public void QuitIsClicked()
-    {
-        Debug.Log("Saliendo...");
-        Application.Quit();
-
-#if UNITY_EDITOR
-        // Si estás en el Editor, para simular el cierre:
-        UnityEditor.EditorApplication.isPlaying = false;
-#endif
-    }
-
-    private void DeleteHighScore()
-    {
-        PlayerPrefs.DeleteKey("High Score");
     }
 }

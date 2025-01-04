@@ -264,7 +264,7 @@ public class InvadersManager : MonoBehaviour
 
         invadersSpeedAcceleration = invadersSpeed + (totalColumns * totalRow - invadersCount) * accelerationFactor;
 
-        invadersSpeedAcceleration = Mathf.Clamp(invadersSpeedAcceleration, 2.5f, 7.5f);
+        invadersSpeedAcceleration = Mathf.Clamp(invadersSpeedAcceleration, 0f, 7.5f);
     }
 
     private void InvadersLateralMovement()
@@ -371,31 +371,6 @@ public class InvadersManager : MonoBehaviour
         }
     }
 
-    public void ClearInvaders()
-    {
-        for (int i = 0; i < totalColumns; i++)
-        {
-            for (int j = 0; j < totalRow; j++)
-            {
-                if (matrizInvaders[i][j] != null)
-                {
-                    Destroy(matrizInvaders[i][j]);
-                }
-            }
-        }
-
-        matrizInvaders.Clear();
-
-        if (newBigInvader != null)
-        {
-            Destroy(newBigInvader);
-        }
-
-        newBigInvader = null;
-        movingRight = true;
-        gameIsOver = false;
-    }
-
     public void DeactivateInvaders()
     {
         for (int i = 0; i < totalColumns; i++)
@@ -447,5 +422,34 @@ public class InvadersManager : MonoBehaviour
 
         bigInvader1.gameObject.SetActive(modelChanging);
         bigInvader2.gameObject.SetActive(!modelChanging);
+    }
+
+    
+
+
+
+    public void ClearInvaders()
+    {
+        for (int i = 0; i < totalColumns; i++)
+        {
+            for (int j = 0; j < totalRow; j++)
+            {
+                if (matrizInvaders[i][j] != null)
+                {
+                    Destroy(matrizInvaders[i][j]);
+                }
+            }
+        }
+
+        matrizInvaders.Clear();
+
+        if (newBigInvader != null)
+        {
+            Destroy(newBigInvader);
+        }
+
+        newBigInvader = null;
+        movingRight = true;
+        gameIsOver = false;
     }
 }

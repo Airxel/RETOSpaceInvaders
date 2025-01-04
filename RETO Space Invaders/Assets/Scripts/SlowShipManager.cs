@@ -102,6 +102,10 @@ public class SlowShipManager : MonoBehaviour
         {
             EnemyHit();
         }
+        else if (other.gameObject.CompareTag("Enemy"))
+        {
+            EnemyContact();
+        }
 
         IPowerUpsInterface powerUp = other.GetComponent<IPowerUpsInterface>();
 
@@ -128,6 +132,11 @@ public class SlowShipManager : MonoBehaviour
         {
             PlayerRespawn();
         }
+    }
+
+    private void EnemyContact()
+    {
+        GameManager.instance.PlayerDead();
     }
 
     private void PlayerRespawn()
