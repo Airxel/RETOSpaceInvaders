@@ -28,6 +28,10 @@ public class YellowInvader : MonoBehaviour
     [SerializeField]
     private int randomSpawn;
 
+    /// <summary>
+    /// Función que controla las interacciones del invader con otros elementos
+    /// </summary>
+    /// <param name="other"></param>
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Fast Projectile"))
@@ -44,6 +48,9 @@ public class YellowInvader : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Función que se activa cuando es golpeado por un proyectil de la nave rápida
+    /// </summary>
     private void FastProjectileHit()
     {
         hitPoints = hitPoints - fastProjectileDamage;
@@ -54,6 +61,9 @@ public class YellowInvader : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Función que se activa cuando es golpeado por un proyectil de la nave equilibrada
+    /// </summary>
     private void BalancedProjectileHit()
     {
         hitPoints = hitPoints - balancedProjectileDamage;
@@ -64,6 +74,9 @@ public class YellowInvader : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Función que se activa cuando es golpeado por un proyectil de la nave lenta
+    /// </summary>
     private void SlowProjectileHit()
     {
         hitPoints = hitPoints - slowProjectileDamage;
@@ -74,6 +87,9 @@ public class YellowInvader : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Función que controla si un invader va a hacer spawn a un power-up
+    /// </summary>
     private void SpawnPowerUp()
     {
         randomSpawn = Random.Range(0, 100);
@@ -86,6 +102,9 @@ public class YellowInvader : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Función que controla si un invader es eliminado
+    /// </summary>
     private void DeadInvader()
     {
         SpawnPowerUp();

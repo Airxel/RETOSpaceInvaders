@@ -15,7 +15,7 @@ D:/Airam 3D/RAY/Repositorios/RETOSpaceInvaders/RETO Space Invaders
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50367
+50514
 Successfully changed project path to: D:/Airam 3D/RAY/Repositorios/RETOSpaceInvaders/RETO Space Invaders
 D:/Airam 3D/RAY/Repositorios/RETOSpaceInvaders/RETO Space Invaders
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,14 +49,14 @@ D:/Airam 3D/RAY/Repositorios/RETOSpaceInvaders/RETO Space Invaders
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [93216]  Target information:
+Player connection [93924]  Target information:
 
-Player connection [93216]  * "[IP] 192.168.1.125 [Port] 0 [Flags] 2 [Guid] 2097526155 [EditorId] 2097526155 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-D7FTLJD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [93924]  * "[IP] 192.168.1.125 [Port] 0 [Flags] 2 [Guid] 2663396547 [EditorId] 2663396547 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-D7FTLJD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [93216] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [93216] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [93924] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [93924] Host joined alternative multi-casting on [225.0.0.222:34997]...
 [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
-Refreshing native plugins compatible for Editor in 3.53 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 3.70 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.52f1 (1120fcb54228)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.52f1/Editor/Data/Resources/UnitySubsystems
@@ -72,47 +72,47 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.52f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.52f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.52f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56156
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56360
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.52f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.52f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003846 seconds.
+Registered in 0.003637 seconds.
 - Loaded All Assemblies, in  0.240 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 171 ms
+Android Extension - Scanning For ADB Devices 161 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.395 seconds
-Domain Reload Profiling: 634ms
-	BeginReloadAssembly (74ms)
+- Finished resetting the current domain, in  0.391 seconds
+Domain Reload Profiling: 630ms
+	BeginReloadAssembly (72ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (0ms)
-	RebuildCommonClasses (23ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (24ms)
 	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (39ms)
-	LoadAllAssembliesAndSetupDomain (97ms)
-		LoadAssemblies (73ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (98ms)
+		LoadAssemblies (71ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (95ms)
-			TypeCache.Refresh (94ms)
+		AnalyzeDomain (96ms)
+			TypeCache.Refresh (95ms)
 				TypeCache.ScanAssembly (86ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (395ms)
+	FinalizeReload (391ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (363ms)
+		SetupLoadedEditorAssemblies (358ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (244ms)
-			SetLoadedEditorAssemblies (3ms)
+			InitializePlatformSupportModulesInManaged (230ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (83ms)
-			ProcessInitializeOnLoadMethodAttributes (31ms)
+			ProcessInitializeOnLoadAttributes (91ms)
+			ProcessInitializeOnLoadMethodAttributes (32ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -121,95 +121,95 @@ Domain Reload Profiling: 634ms
 Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-Symbol file data-000001E38775EE50 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file data-0000022A8D53A830 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Timeline.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001E38775EE50 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file data-0000022A69E1F770 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001E3876839C0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file data-0000022A8B877010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEngine.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001E365B6E4E0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file data-0000022A8BBA7E70 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001E365B72CF0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file data-0000022A69E1F770 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001E36617CE40 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file data-0000022A8B897020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001E365E5AAC0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file data-0000022A8BE02220 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001E365B79700 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file data-0000022A69E1F770 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001E3874A5240 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file data-0000022A8B66A010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001E3874A5240 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file data-0000022A4688B080 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001E3653A2AE0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file data-0000022A8B682820 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001E3874A5240 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file data-0000022A4688B080 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001E3661A5050 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file data-0000022A8BE28680 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001E365519C30 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file data-0000022A4689B090 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Settings.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001E3653A2AE0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file data-0000022A8B6AE640 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001E3661A5050 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file data-0000022A8BE28680 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001E387AA9030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file data-0000022A69A67020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TextMeshPro.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001E387DAF220 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file data-0000022A69A67020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001E387DE7C30 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file data-0000022A8B6AE640 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001E3874E1070 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file data-0000022A69A9FA30 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEditor.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001E387AA9030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file data-0000022A69505EA0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001E3874E1070 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file data-0000022A69AB4440 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Rider.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001E365519C30 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file data-0000022A4689B090 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001E365B79700 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file data-0000022A4689B090 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001E387AD6A40 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file data-0000022A69AC0250 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001E387B0E050 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file data-0000022A6956AEC0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001E387C05020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file data-0000022A69BD8020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001E387B0E050 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file data-0000022A69AC0250 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.444 seconds
+- Loaded All Assemblies, in  0.432 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.441 seconds
-Domain Reload Profiling: 885ms
-	BeginReloadAssembly (107ms)
+- Finished resetting the current domain, in  0.434 seconds
+Domain Reload Profiling: 866ms
+	BeginReloadAssembly (102ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
+		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (16ms)
-	RebuildCommonClasses (23ms)
+		CreateAndSetChildDomain (15ms)
+	RebuildCommonClasses (22ms)
 	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (31ms)
-	LoadAllAssembliesAndSetupDomain (276ms)
-		LoadAssemblies (210ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (275ms)
+		LoadAssemblies (208ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (126ms)
-			TypeCache.Refresh (109ms)
-				TypeCache.ScanAssembly (98ms)
-			ScanForSourceGeneratedMonoScriptInfo (11ms)
+		AnalyzeDomain (128ms)
+			TypeCache.Refresh (113ms)
+				TypeCache.ScanAssembly (100ms)
+			ScanForSourceGeneratedMonoScriptInfo (10ms)
 			ResolveRequiredComponents (4ms)
-	FinalizeReload (442ms)
+	FinalizeReload (434ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (328ms)
+		SetupLoadedEditorAssemblies (325ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (12ms)
+			InitializePlatformSupportModulesInManaged (11ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (41ms)
-			ProcessInitializeOnLoadAttributes (254ms)
+			ProcessInitializeOnLoadAttributes (252ms)
 			ProcessInitializeOnLoadMethodAttributes (15ms)
 			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
@@ -243,12 +243,12 @@ Failed to load shader (instanceID 444, GUID 02d2da9bc88d25c4d878c1ed4e0b3854)
 Failed to load shader (instanceID 476, GUID b958ad1c92bd3d64c9e61318b8681dab)
 Failed to load shader (instanceID 488, GUID de7f3ac52268a194383c7d62c2a343c1)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 1.57 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.13 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3254 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 19 unused Assets / (55.0 KB). Loaded Objects now: 3724.
-Memory consumption went from 126.1 MB to 126.1 MB.
-Total: 2.147200 ms (FindLiveObjects: 0.160100 ms CreateObjectMapping: 0.063600 ms MarkObjects: 1.850400 ms  DeleteObjects: 0.072500 ms)
+Unloading 3255 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 19 unused Assets / (55.0 KB). Loaded Objects now: 3725.
+Memory consumption went from 126.2 MB to 126.1 MB.
+Total: 2.428700 ms (FindLiveObjects: 0.183600 ms CreateObjectMapping: 0.069300 ms MarkObjects: 2.041000 ms  DeleteObjects: 0.133500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -266,28 +266,1800 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 2433611.400481 seconds.
-  path: Assets/Scripts/GameplayPlayerProjectile.cs
-  artifactKey: Guid(a14a7ed9f50bd1c4d863a3213db1773d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/GameplayPlayerProjectile.cs using Guid(a14a7ed9f50bd1c4d863a3213db1773d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '2b154addfd6c274377afb3dbde4c3e96') in 0.001761 seconds
+  Time since last request: 2433939.524994 seconds.
+  path: Packages/com.unity.postprocessing/LICENSE.md
+  artifactKey: Guid(19d205ceab90d42038ad1d376affc356) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.postprocessing/LICENSE.md using Guid(19d205ceab90d42038ad1d376affc356) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '68675bfe669d2e27b8786d21e1ba0f99') in 0.002454 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 14.116841 seconds.
-  path: Assets/Scripts/Invaders
-  artifactKey: Guid(f93d0e146d8db824995602d879738789) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Invaders using Guid(f93d0e146d8db824995602d879738789) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: 'eab2c40e7eaffab4394d9d0e1d1f7447') in 0.000341 seconds
+  Time since last request: 0.000023 seconds.
+  path: Packages/com.unity.postprocessing/package.json
+  artifactKey: Guid(2705889b3a9580a47b334f039bfdcb00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.postprocessing/package.json using Guid(2705889b3a9580a47b334f039bfdcb00) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '247c724e5c8a5f0213dfa4b76a1ebee1') in 0.000360 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 2.336232 seconds.
-  path: Assets/Scripts/Power Ups
-  artifactKey: Guid(5f0b6de743100b24fb3db11d01c6239c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Power Ups using Guid(5f0b6de743100b24fb3db11d01c6239c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
- -> (artifact id: '0fb85dc157ac5ed7fb5bfe011529a09a') in 0.000303 seconds
+  Time since last request: 0.000013 seconds.
+  path: Packages/com.unity.postprocessing/CHANGELOG.md
+  artifactKey: Guid(76eb0b51417a8442180aa67edda7d01a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.postprocessing/CHANGELOG.md using Guid(76eb0b51417a8442180aa67edda7d01a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '01a647b4c26a6ae7c8b59fcb0fb37448') in 0.000300 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.856438 seconds.
+  path: Packages/com.unity.postprocessing/PostProcessing
+  artifactKey: Guid(0d256a256b5667448bb3f33f75dbb4bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.postprocessing/PostProcessing using Guid(0d256a256b5667448bb3f33f75dbb4bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '5c6e52de3ceb49d4d04489eec503eaba') in 0.000342 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.259006 seconds.
+  path: Packages/com.unity.postprocessing/PostProcessing/PostProcessResources.asset
+  artifactKey: Guid(d82512f9c8e5d4a4d938b575d47f88d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.postprocessing/PostProcessing/PostProcessResources.asset using Guid(d82512f9c8e5d4a4d938b575d47f88d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '4f7c7e8c93df2929a665c8bfe26043bd') in 0.004357 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 3.702514 seconds.
+  path: Packages/com.unity.postprocessing/PostProcessing/Editor
+  artifactKey: Guid(10af18f17ff5ecf47bc4dbd1551b36d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.postprocessing/PostProcessing/Editor using Guid(10af18f17ff5ecf47bc4dbd1551b36d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '91ab77a0f0b2ed0e46d50689a7793d37') in 0.000349 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.059842 seconds.
+  path: Packages/com.unity.postprocessing/PostProcessing/Editor/BaseEditor.cs
+  artifactKey: Guid(69a4fc27499557744827c787d71fdf08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.postprocessing/PostProcessing/Editor/BaseEditor.cs using Guid(69a4fc27499557744827c787d71fdf08) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'c28c7669438bd572ad1fe8fb8f9e5960') in 0.000410 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.004813 seconds.
+  path: Packages/com.unity.postprocessing/PostProcessing/Editor/PostProcessEffectBaseEditor.cs
+  artifactKey: Guid(5a7e5d36c781f1a469ea8f981b785506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.postprocessing/PostProcessing/Editor/PostProcessEffectBaseEditor.cs using Guid(5a7e5d36c781f1a469ea8f981b785506) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '5f3dd4034776d48eb0ee27ab9559aec6') in 0.000461 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000098 seconds.
+  path: Packages/com.unity.postprocessing/PostProcessing/Editor/PostProcessVolumeEditor.cs
+  artifactKey: Guid(4e487364a0cd33f4a9ef2ed93819d4d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.postprocessing/PostProcessing/Editor/PostProcessVolumeEditor.cs using Guid(4e487364a0cd33f4a9ef2ed93819d4d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'e4fa6d80cdfe4fc1ddbbee1298712e1b') in 0.000927 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Packages/com.unity.postprocessing/PostProcessing/Editor/PostProcessEffectEditor.cs
+  artifactKey: Guid(e81ec1796a6c9844f9ab3847494d7911) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.postprocessing/PostProcessing/Editor/PostProcessEffectEditor.cs using Guid(e81ec1796a6c9844f9ab3847494d7911) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'a30c1d79507663019bff35c2b9264879') in 0.000509 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Packages/com.unity.postprocessing/PostProcessing/Editor/Unity.Postprocessing.Editor.asmdef
+  artifactKey: Guid(a35efad8797223d499f8c68b1f545dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.postprocessing/PostProcessing/Editor/Unity.Postprocessing.Editor.asmdef using Guid(a35efad8797223d499f8c68b1f545dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '8f4f21a203a306f3e6f0cc7debbe16e1') in 0.000649 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Symbol file data-0000022A8D1BDF50 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A69F9F050 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97D023B0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A69F9F050 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97D7D0F0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97353010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A69B39010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A69B3FA20 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8C3D0020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8D1BDF50 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8BDE1010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8D1BDF50 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8D1BDF50 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8D1C8360 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A94922E90 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8D1C8360 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A96AD8010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A95535040 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8C15E020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A94922E90 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8B66A010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97367A20 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A9556DA50 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A9492ECA0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8D0621C0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8D0621C0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A96D00030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8D0621C0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.334 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.621 seconds
+Domain Reload Profiling: 955ms
+	BeginReloadAssembly (120ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (29ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (18ms)
+	LoadAllAssembliesAndSetupDomain (167ms)
+		LoadAssemblies (218ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (13ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (622ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (351ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (45ms)
+			ProcessInitializeOnLoadAttributes (265ms)
+			ProcessInitializeOnLoadMethodAttributes (15ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Refreshing native plugins compatible for Editor in 1.11 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3365 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 53 unused Assets / (3.9 MB). Loaded Objects now: 3821.
+Memory consumption went from 135.3 MB to 131.3 MB.
+Total: 4.091400 ms (FindLiveObjects: 0.272300 ms CreateObjectMapping: 0.100200 ms MarkObjects: 2.559700 ms  DeleteObjects: 1.157700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Symbol file data-0000022A972ED020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8BE7D460 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A94C96020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A9495E700 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8BE7D460 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A69DDDFB0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A9695E850 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A95413020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8BDE1010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A94DF4010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8B915010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A69F93030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8BE7D460 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A94CCA020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A94AFA020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8C2CCA20 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A96D00030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A96FDE030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A953BF020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A94CCA020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8B66A010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A94CCA020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A6A32B820 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A6A32B820 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8CEA6FE0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8CEA6FE0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A95491010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A69DDDFB0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.295 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.514 seconds
+Domain Reload Profiling: 809ms
+	BeginReloadAssembly (105ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (19ms)
+	LoadAllAssembliesAndSetupDomain (142ms)
+		LoadAssemblies (190ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (11ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (515ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (292ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (38ms)
+			ProcessInitializeOnLoadAttributes (219ms)
+			ProcessInitializeOnLoadMethodAttributes (13ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Refreshing native plugins compatible for Editor in 1.22 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3366 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 53 unused Assets / (4.0 MB). Loaded Objects now: 3824.
+Memory consumption went from 135.5 MB to 131.6 MB.
+Total: 3.619900 ms (FindLiveObjects: 0.298700 ms CreateObjectMapping: 0.113900 ms MarkObjects: 2.017400 ms  DeleteObjects: 1.188100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Symbol file data-0000022A953BF020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A69FF8B70 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A96FFE040 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A69FF8B70 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8B897030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97D273F0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A956BA020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A94958040 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8C0B3010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A94CCA020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8B915010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A96B30640 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A94958040 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A696E0A30 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A956BA020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8B89DA40 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A96D00030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A94EF2020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A953BF020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A696E0A30 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8B66A010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A696E0A30 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A696E0A30 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A696E0A30 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8CEA6FE0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8D9F01C0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A694A8020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8D9F01C0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.393 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.580 seconds
+Domain Reload Profiling: 972ms
+	BeginReloadAssembly (126ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (30ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (209ms)
+		LoadAssemblies (257ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (21ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (5ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (580ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (290ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (11ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (39ms)
+			ProcessInitializeOnLoadAttributes (220ms)
+			ProcessInitializeOnLoadMethodAttributes (13ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Refreshing native plugins compatible for Editor in 1.09 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3366 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 53 unused Assets / (4.0 MB). Loaded Objects now: 3827.
+Memory consumption went from 135.5 MB to 131.6 MB.
+Total: 3.067000 ms (FindLiveObjects: 0.184800 ms CreateObjectMapping: 0.079200 ms MarkObjects: 2.020000 ms  DeleteObjects: 0.782200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Symbol file data-0000022A953BF020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A4615F190 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A96C8D010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A4615F190 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A69DB2030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A980D4010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8D193010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A956DA040 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8C0B3010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A94CCA020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A981701B0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A695DECB0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A956DA040 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A956DA040 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8D193010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A956DA040 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A96D00030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8C0B3010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A953BF020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A971C6020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8B66A010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A971C6020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A956DA040 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A956DA040 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97353010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8B886EA0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8D6BFB70 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A980D4010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.292 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.521 seconds
+Domain Reload Profiling: 813ms
+	BeginReloadAssembly (103ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (20ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (18ms)
+	LoadAllAssembliesAndSetupDomain (144ms)
+		LoadAssemblies (189ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (11ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (521ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (301ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (36ms)
+			ProcessInitializeOnLoadAttributes (231ms)
+			ProcessInitializeOnLoadMethodAttributes (16ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Refreshing native plugins compatible for Editor in 1.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3366 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 53 unused Assets / (3.9 MB). Loaded Objects now: 3830.
+Memory consumption went from 135.5 MB to 131.6 MB.
+Total: 3.049600 ms (FindLiveObjects: 0.212400 ms CreateObjectMapping: 0.072800 ms MarkObjects: 1.936000 ms  DeleteObjects: 0.827300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Symbol file data-0000022A953BF020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A9495C050 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A69CA2F20 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A9495C050 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8CF11400 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A98114030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A95491010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A95413020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8C0B3010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A94CCA020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8B915010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A69A87030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A94CCA020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97D273F0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A95491010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8CF17E10 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A96D00030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8BAC1040 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A953BF020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97D273F0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8B66A010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97D273F0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97D273F0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A94F7A020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A694C8040 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8D9EE1B0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8BAC1040 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8B97D840 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.544 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.236 seconds
+Domain Reload Profiling: 1779ms
+	BeginReloadAssembly (175ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (31ms)
+	RebuildCommonClasses (41ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (275ms)
+		LoadAssemblies (350ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (30ms)
+			TypeCache.Refresh (12ms)
+				TypeCache.ScanAssembly (2ms)
+			ScanForSourceGeneratedMonoScriptInfo (8ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (1237ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (639ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (22ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (70ms)
+			ProcessInitializeOnLoadAttributes (506ms)
+			ProcessInitializeOnLoadMethodAttributes (30ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 2.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3366 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 53 unused Assets / (4.0 MB). Loaded Objects now: 3833.
+Memory consumption went from 135.5 MB to 131.6 MB.
+Total: 3.896500 ms (FindLiveObjects: 0.371700 ms CreateObjectMapping: 0.105000 ms MarkObjects: 2.454900 ms  DeleteObjects: 0.963700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Symbol file data-0000022A953BF020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A981398E0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A94EF2020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A981398E0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A96D39280 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A982FC020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD8DA0D50 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A956DA040 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8C0B3010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97D273F0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8B915010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A69A87030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A956DA040 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A956DA040 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD8DA0D50 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A956DA040 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A96D00030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A96C4B020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A953BF020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A98770010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8B66A010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A98770010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A956DA040 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A956DA040 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A694C8040 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A69983010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD932B1F0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A982FC020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.319 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.548 seconds
+Domain Reload Profiling: 867ms
+	BeginReloadAssembly (112ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (24ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (19ms)
+	LoadAllAssembliesAndSetupDomain (160ms)
+		LoadAssemblies (206ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (16ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (5ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (549ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (323ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (43ms)
+			ProcessInitializeOnLoadAttributes (244ms)
+			ProcessInitializeOnLoadMethodAttributes (13ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Refreshing native plugins compatible for Editor in 1.00 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3366 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 53 unused Assets / (4.0 MB). Loaded Objects now: 3836.
+Memory consumption went from 135.5 MB to 131.6 MB.
+Total: 2.623400 ms (FindLiveObjects: 0.143400 ms CreateObjectMapping: 0.063400 ms MarkObjects: 1.772500 ms  DeleteObjects: 0.643400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Symbol file data-0000022A953BF020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97D0A3C0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A96C4B020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A956DA040 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97D0A3C0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD9A54870 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD8DB0D60 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD9BDD010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8C0B3010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97D273F0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8B915010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8D82FE70 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97D0A3C0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD9BDD010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD8DB0D60 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97D0A3C0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A96D00030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A94870080 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A953BF020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A94F04010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8B66A010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97530AC0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A94A24230 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A94A24230 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A694C8040 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8D9EE1B0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD8DF5DA0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD9A54870 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.300 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.536 seconds
+Domain Reload Profiling: 835ms
+	BeginReloadAssembly (111ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (20ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (17ms)
+	LoadAllAssembliesAndSetupDomain (143ms)
+		LoadAssemblies (198ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (536ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (310ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (40ms)
+			ProcessInitializeOnLoadAttributes (237ms)
+			ProcessInitializeOnLoadMethodAttributes (14ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Refreshing native plugins compatible for Editor in 1.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3366 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 53 unused Assets / (3.9 MB). Loaded Objects now: 3839.
+Memory consumption went from 135.5 MB to 131.6 MB.
+Total: 6.190200 ms (FindLiveObjects: 0.584800 ms CreateObjectMapping: 0.277200 ms MarkObjects: 2.996200 ms  DeleteObjects: 2.329400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Symbol file data-0000022A953BF020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97530AC0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A94870080 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97D0A3C0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97530AC0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A982FC020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD9526030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022ADA5B7010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD8E3A230 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97D273F0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8B915010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8BAC1040 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97530AC0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022ADA5B7010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD9526030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97D0A3C0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A96D00030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD9AE7020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A953BF020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97D273F0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8B66A010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97D273F0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A94A24230 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A94A24230 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A694C8040 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD9A535B0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A96AD8010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A982FC020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.311 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.499 seconds
+Domain Reload Profiling: 809ms
+	BeginReloadAssembly (107ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (22ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (19ms)
+	LoadAllAssembliesAndSetupDomain (155ms)
+		LoadAssemblies (196ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (18ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (5ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (499ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (277ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (12ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (38ms)
+			ProcessInitializeOnLoadAttributes (209ms)
+			ProcessInitializeOnLoadMethodAttributes (12ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Refreshing native plugins compatible for Editor in 1.20 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3366 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 53 unused Assets / (3.9 MB). Loaded Objects now: 3842.
+Memory consumption went from 135.5 MB to 131.6 MB.
+Total: 2.722500 ms (FindLiveObjects: 0.171300 ms CreateObjectMapping: 0.074200 ms MarkObjects: 1.789900 ms  DeleteObjects: 0.686400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Symbol file data-0000022A953BF020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A96D39280 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A98278020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97367030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A96D39280 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A973E9010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97DC2E90 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022ADA5B7010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8C0B3010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97D273F0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8B915010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022ADA6B4030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022ADA5B7010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022ADA5B7010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97DC2E90 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022ADA5B7010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A96D00030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD94B2020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A953BF020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97D273F0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8B66A010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD8EB1020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD9345040 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD9345040 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A694C8040 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD9A535B0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD8E3A230 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A69C81010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.527 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.016 seconds
+Domain Reload Profiling: 1540ms
+	BeginReloadAssembly (162ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (36ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (283ms)
+		LoadAssemblies (353ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (29ms)
+			TypeCache.Refresh (12ms)
+				TypeCache.ScanAssembly (2ms)
+			ScanForSourceGeneratedMonoScriptInfo (8ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1016ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (500ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (66ms)
+			ProcessInitializeOnLoadAttributes (382ms)
+			ProcessInitializeOnLoadMethodAttributes (21ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Refreshing native plugins compatible for Editor in 3.17 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3366 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 53 unused Assets / (3.9 MB). Loaded Objects now: 3845.
+Memory consumption went from 135.5 MB to 131.6 MB.
+Total: 4.473700 ms (FindLiveObjects: 0.465500 ms CreateObjectMapping: 0.148100 ms MarkObjects: 2.810200 ms  DeleteObjects: 1.048600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Symbol file data-0000022A97D7D0F0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A98778020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD9AE7020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8C117020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A69FD6C30 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A9488F8E0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A6A097010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97365020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD9099040 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97BD62B0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD8DD5D90 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A69F93030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A98778020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8D179E20 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A69888020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97044670 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD8E37060 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A98092040 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A981DF030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD9B28F80 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A984CA010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD9341030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD92F4040 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD92F4040 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD9A3E050 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A9555D060 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A96A27010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A9488F8E0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.514 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.054 seconds
+Domain Reload Profiling: 1566ms
+	BeginReloadAssembly (178ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (252ms)
+		LoadAssemblies (321ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (28ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (2ms)
+			ScanForSourceGeneratedMonoScriptInfo (8ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (1054ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (480ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (65ms)
+			ProcessInitializeOnLoadAttributes (363ms)
+			ProcessInitializeOnLoadMethodAttributes (22ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 3.10 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3366 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 53 unused Assets / (4.0 MB). Loaded Objects now: 3848.
+Memory consumption went from 135.5 MB to 131.6 MB.
+Total: 3.765700 ms (FindLiveObjects: 0.355000 ms CreateObjectMapping: 0.101100 ms MarkObjects: 2.366000 ms  DeleteObjects: 0.942500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Symbol file data-0000022A94F33350 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A98778020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A96C4B020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8C117020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A94EB8050 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD9702020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A6A097010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A98A67F00 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97BEAB60 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97BD62B0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD8DD5D90 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A695DECB0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A9851E010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A9813F7D0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A69888020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97CD2EB0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD8E37060 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A98092040 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A981DF030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD9B28F80 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8C011480 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD9341030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A98A67F00 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A98A67F00 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD9A3E050 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A9555D060 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A96A27010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD9702020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.288 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.510 seconds
+Domain Reload Profiling: 797ms
+	BeginReloadAssembly (102ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (18ms)
+	LoadAllAssembliesAndSetupDomain (140ms)
+		LoadAssemblies (184ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (11ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (510ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (285ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (11ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (38ms)
+			ProcessInitializeOnLoadAttributes (217ms)
+			ProcessInitializeOnLoadMethodAttributes (13ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Refreshing native plugins compatible for Editor in 1.19 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3366 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 53 unused Assets / (3.9 MB). Loaded Objects now: 3851.
+Memory consumption went from 135.5 MB to 131.6 MB.
+Total: 3.488300 ms (FindLiveObjects: 0.284700 ms CreateObjectMapping: 0.096600 ms MarkObjects: 2.194400 ms  DeleteObjects: 0.911900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Symbol file data-0000022A981DF030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A975381A0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A9488F0D0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8C117020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A975381A0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022ADABC8540 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A6A097010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A95478030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD988A8A0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97BD62B0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD988A8A0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A9764E4B0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A9851E010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8D179E20 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A69888020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A9851E010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD91D1010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022ADA260080 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A981DF030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD9B28F80 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8BC83020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD9B28F80 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A95478030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A95478030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD9A3E050 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A9555D060 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022ADA4C1030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022ADABC8540 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.490 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.019 seconds
+Domain Reload Profiling: 1508ms
+	BeginReloadAssembly (161ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (32ms)
+	RebuildCommonClasses (41ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (241ms)
+		LoadAssemblies (306ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (25ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (7ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1019ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (509ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (75ms)
+			ProcessInitializeOnLoadAttributes (382ms)
+			ProcessInitializeOnLoadMethodAttributes (21ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 2.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3366 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 53 unused Assets / (3.9 MB). Loaded Objects now: 3854.
+Memory consumption went from 135.5 MB to 131.6 MB.
+Total: 4.680600 ms (FindLiveObjects: 0.439000 ms CreateObjectMapping: 0.117400 ms MarkObjects: 2.761900 ms  DeleteObjects: 1.360900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Symbol file data-0000022A981DF030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A9581C030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A98802710 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8C117020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A9581C030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8D966020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A6A097010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8D6D9030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8C0B3010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A6A00E020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8B915010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8CEA6FE0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A694AE080 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8D6D9030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A69888020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A694AE080 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022ADA4C1030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022ADA260080 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A981DF030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD9B28F80 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8BC83020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD9B28F80 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97263040 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97263040 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD9A3E050 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A9555D060 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022ADA4C1030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8C3F6050 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.285 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.514 seconds
+Domain Reload Profiling: 798ms
+	BeginReloadAssembly (102ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (19ms)
+	LoadAllAssembliesAndSetupDomain (137ms)
+		LoadAssemblies (181ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (11ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (514ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (290ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (35ms)
+			ProcessInitializeOnLoadAttributes (221ms)
+			ProcessInitializeOnLoadMethodAttributes (17ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Refreshing native plugins compatible for Editor in 1.40 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3366 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 53 unused Assets / (4.0 MB). Loaded Objects now: 3857.
+Memory consumption went from 135.5 MB to 131.6 MB.
+Total: 3.122400 ms (FindLiveObjects: 0.214700 ms CreateObjectMapping: 0.085000 ms MarkObjects: 1.893500 ms  DeleteObjects: 0.928000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3464.614677 seconds.
+  path: Assets/Prefabs/Power Ups/Faster Shot Speed Power Up.prefab
+  artifactKey: Guid(2a12575cf3fd24746be76ea027015a11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Power Ups/Faster Shot Speed Power Up.prefab using Guid(2a12575cf3fd24746be76ea027015a11) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '44c2ed1b2994a4c8dbd98ce3f4405ff8') in 0.102106 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Prefabs/Power Ups/Shelters Healing Power Up.prefab
+  artifactKey: Guid(3261c04178112504ea436d7c5d9aad85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Power Ups/Shelters Healing Power Up.prefab using Guid(3261c04178112504ea436d7c5d9aad85) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '6dc43060a9ea4cf95dc0bb88dd6f8c9d') in 0.012136 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Symbol file data-0000022A8BA81020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8D6E8AF0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8BFEB030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A9765F4D0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8D6E8AF0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022ADAB69020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A9695E850 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A4615F190 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD8D52010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A97D273F0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022ADABE0560 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A6A01B700 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD91F9040 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A69DD0670 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8CEA6FE0 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD8D9C040 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A96AD8010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022ADA6C5060 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A981DF030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD9527010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A8C31C020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD9527010 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A69C9B030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A69C9B030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022AD9A3E050 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A9555D060 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022ADA4C1030 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022ADAB69020 doesn't match image D:\Airam 3D\RAY\Repositorios\RETOSpaceInvaders\RETO Space Invaders\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.489 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.124 seconds
+Domain Reload Profiling: 1612ms
+	BeginReloadAssembly (167ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (33ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (245ms)
+		LoadAssemblies (315ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (28ms)
+			TypeCache.Refresh (12ms)
+				TypeCache.ScanAssembly (2ms)
+			ScanForSourceGeneratedMonoScriptInfo (8ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1125ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (547ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (78ms)
+			ProcessInitializeOnLoadAttributes (417ms)
+			ProcessInitializeOnLoadMethodAttributes (23ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 3.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3365 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 53 unused Assets / (3.9 MB). Loaded Objects now: 3867.
+Memory consumption went from 139.8 MB to 135.9 MB.
+Total: 3.648600 ms (FindLiveObjects: 0.342900 ms CreateObjectMapping: 0.099200 ms MarkObjects: 2.306100 ms  DeleteObjects: 0.899400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

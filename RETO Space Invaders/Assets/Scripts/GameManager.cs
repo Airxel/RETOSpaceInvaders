@@ -58,7 +58,11 @@ public class GameManager : MonoBehaviour
 
         //Se activa y anima en menú principal
         mainMenu.SetActive(true);
-        LeanTween.moveY(mainMenu.GetComponent<RectTransform>(), -25f, 1.25f).setEase(LeanTweenType.easeInOutSine).setLoopPingPong();
+        LeanTween.moveY(mainMenu.GetComponent<RectTransform>(), -10f, 2.5f).setEase(LeanTweenType.easeInOutSine).setOnComplete(() =>
+        {
+            LeanTween.moveY(mainMenu.GetComponent<RectTransform>(), -25f, 1.25f).setEase(LeanTweenType.easeInOutSine).setLoopPingPong();
+        });
+        
     }
 
     /// <summary>

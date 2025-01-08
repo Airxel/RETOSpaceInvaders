@@ -51,6 +51,9 @@ public class SlowShipManager : MonoBehaviour
     [SerializeField]
     private float fasterMovementTimer;
 
+    /// <summary>
+    /// Se establecen los valores bases, para poder usarlos con los power-ups, por ejemplo
+    /// </summary>
     private void Start()
     {
         baseSpeed = speed;
@@ -63,17 +66,10 @@ public class SlowShipManager : MonoBehaviour
         {
             shootingDelayTimer = shootingDelayTimer + Time.deltaTime;
 
+            // Esto ocurre si el power-up de más velocidad de disparo está activo
             if (fasterShooting)
             {
-                shootingDelayTime = baseShootingDelayTime * fasterShootingMultiplier;
-
-                fasterShootingTimer = fasterShootingTimer - Time.deltaTime;
-
-                if (fasterShootingTimer <= 0f)
-                {
-                    shootingDelayTime = baseShootingDelayTime;
-                    fasterShooting = false;
-                }
+                FasterShotSpeedIsActive();
             }
 
             if (shootingDelayTimer >= shootingDelayTime)
@@ -83,19 +79,16 @@ public class SlowShipManager : MonoBehaviour
         }
         else if (GameManager.isRespawning)
         {
-            respawnTimer = respawnTimer + Time.deltaTime;
-
-            if (respawnTimer >= respawnTime)
-            {
-                GameManager.isRespawning = false;
-
-                respawnTimer = 0f;
-            }
+            PlayerIsRespawning();
         }
 
         ShipMovement();
     }
 
+    /// <summary>
+    /// Función que controla la interfaz y las interacciones de la nave con otros elementos
+    /// </summary>
+    /// <param name="other"></param>
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Enemy Projectile"))
@@ -107,6 +100,7 @@ public class SlowShipManager : MonoBehaviour
             EnemyContact();
         }
 
+        // Se llama a la interfaz, al interactuar con un power-up
         IPowerUpsInterface powerUp = other.GetComponent<IPowerUpsInterface>();
 
         if (powerUp != null)
@@ -115,8 +109,12 @@ public class SlowShipManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Función que controla cuando el jugador es golpeado
+    /// </summary>
     private void EnemyHit()
     {
+        // Se pierde una vida
         lives = GameManager.instance.lives - 1;
 
         GameManager.instance.lives = lives;
@@ -124,6 +122,7 @@ public class SlowShipManager : MonoBehaviour
 
         SoundsManager.instance.PlaySound(SoundsManager.instance.playerDeadSound);
 
+        // Dependiendo de las vidas, hace respawn o no
         if (lives <= 0)
         {
             GameManager.instance.PlayerDead();
@@ -134,11 +133,17 @@ public class SlowShipManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Función que controla si un invader golpea al jugador, terminando la partida
+    /// </summary>
     private void EnemyContact()
     {
         GameManager.instance.PlayerDead();
     }
 
+    /// <summary>
+    /// Función que controla el respawn del jugador
+    /// </summary>
     private void PlayerRespawn()
     {
         GameManager.isRespawning = true;
@@ -146,6 +151,24 @@ public class SlowShipManager : MonoBehaviour
         this.transform.position = new Vector3(0f, 10f, 0f);
     }
 
+    /// <summary>
+    /// Función que controla el tiempo que dura el respawn del jugador
+    /// </summary>
+    private void PlayerIsRespawning()
+    {
+        respawnTimer = respawnTimer + Time.deltaTime;
+
+        if (respawnTimer >= respawnTime)
+        {
+            GameManager.isRespawning = false;
+
+            respawnTimer = 0f;
+        }
+    }
+
+    /// <summary>
+    /// Función que controla el disparo del jugador
+    /// </summary>
     private void ShootingProjectile()
     {
         if (Input.GetButtonUp("Shoot"))
@@ -158,10 +181,14 @@ public class SlowShipManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Función que controla el movimiento del jugador
+    /// </summary>
     private void ShipMovement()
     {
         shipMovement = Input.GetAxis("Horizontal");
 
+        // Esto ocurre si el power-up de más velocidad de movimiento está activo
         if (fasterMovement)
         {
             speed = baseSpeed * fasterMovementMultiplier;
@@ -175,6 +202,7 @@ public class SlowShipManager : MonoBehaviour
             }
         }
 
+        // Esto ocurre si la inversión de movimiento está activa
         if (invertMovement)
         {
             shipMovement = shipMovement * -1f;
@@ -194,21 +222,46 @@ public class SlowShipManager : MonoBehaviour
         this.transform.position = newShipMovement;
     }
 
+    /// <summary>
+    /// Esta función controla si la inversión está activa y su duración
+    /// </summary>
+    /// <param name="powerUpDuration"></param>
     public void InvertMovement(float powerUpDuration)
     {
         invertMovement = true;
         invertMovementTimer = powerUpDuration;
     }
 
+    /// <summary>
+    /// Esta función controla si el aumento de velocidad de movimiento está activo y su duración
+    /// </summary>
+    /// <param name="powerUpDuration"></param>
     public void FasterMovement(float powerUpDuration)
     {
         fasterMovement = true;
         fasterMovementTimer = powerUpDuration;
     }
 
+    /// <summary>
+    /// Esta función controla si el aumento de velocidad de disparo está activo y su duración
+    /// </summary>
+    /// <param name="powerUpDuration"></param>
     public void FasterShotSpeed(float powerUpDuration)
     {
         fasterShooting = true;
         fasterShootingTimer = powerUpDuration;
+    }
+
+    private void FasterShotSpeedIsActive()
+    {
+        shootingDelayTime = baseShootingDelayTime * fasterShootingMultiplier;
+
+        fasterShootingTimer = fasterShootingTimer - Time.deltaTime;
+
+        if (fasterShootingTimer <= 0f)
+        {
+            shootingDelayTime = baseShootingDelayTime;
+            fasterShooting = false;
+        }
     }
 }

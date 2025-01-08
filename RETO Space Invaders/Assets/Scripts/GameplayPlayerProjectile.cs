@@ -7,11 +7,18 @@ public class GameplayPlayerProjectile : MonoBehaviour
     [SerializeField]
     private float projectileSpeed = 100f;
 
+    /// <summary>
+    /// Función que controla el movimiento del proyectil del jugador
+    /// </summary>
     private void Update()
     {
         this.transform.Translate(Vector3.up * projectileSpeed * Time.deltaTime);
     }
 
+    /// <summary>
+    /// Función que controla las interacciones del proyectil con otros elementos
+    /// </summary>
+    /// <param name="other"></param>
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Enemy") || 

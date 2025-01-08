@@ -122,12 +122,15 @@ public class InvadersManager : MonoBehaviour
 
     private void Start()
     {
+        // Se establece el primer valor para que el big invader haga spawn
         nextSpawnTimer = Random.Range(minBigSpawnSeconds, maxBigSpawnSeconds);
 
+        // Se establece el primer valor para que comiencen a disparar los invaders
         nextProjectileTimer = Random.Range(minShootingSeconds, maxShootingSeconds);
     }
     private void Update()
     {
+        // Se controla la animación de los invaders
         modelChangeTimer = modelChangeTimer + Time.deltaTime;
 
         if (modelChangeTimer >= modelChangeTime)
@@ -151,6 +154,7 @@ public class InvadersManager : MonoBehaviour
 
         }
 
+        // Se controla la cantidad de invaders que quedan, para saber si la partida termina
         invadersCount = InvadersCounter();
 
         if (invadersCount == 0)
@@ -165,8 +169,10 @@ public class InvadersManager : MonoBehaviour
             GameManager.instance.PlayerVictory();
         }
 
+        // Si el jugador no está haciendo respawn
         if (!GameManager.isRespawning)
         {
+            // Se controla el tiempo de disparo del os invaders
             lastProjectileTimer = lastProjectileTimer + Time.deltaTime;
 
             if (lastProjectileTimer >= nextProjectileTimer)
@@ -181,8 +187,10 @@ public class InvadersManager : MonoBehaviour
 
             InvadersLateralMovement();
 
+            // Si no existe el big invader, se crea
             if (newBigInvader == null && gameIsOver == false)
             {
+                // Se controla el tiempo de spawn del big invader
                 lastSpawnTimer = lastSpawnTimer + Time.deltaTime;
 
                 if (lastSpawnTimer >= nextSpawnTimer && rightSpawn)
@@ -201,6 +209,7 @@ public class InvadersManager : MonoBehaviour
                 }
             }
 
+            // Si existe el big invader, se controla su movimiento, según el lado donde haga spawn
             if (newBigInvader != null && gameIsOver == false)
             {
                 if (rightSpawn)
@@ -215,6 +224,9 @@ public class InvadersManager : MonoBehaviour
         }  
     }
 
+    /// <summary>
+    /// Función que controla el spawn de los invader, creando una lista de listas o matriz, poniéndoles nombre y añadiéndolos
+    /// </summary>
     public void InvadersSpawn()
     {
         matrizInvaders.Clear();
@@ -239,6 +251,10 @@ public class InvadersManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Función que controla el número de invaders activos en la escena, dando un int como resultado
+    /// </summary>
+    /// <returns></returns>
     private int InvadersCounter()
     {
         invadersCount = 0;
@@ -258,6 +274,9 @@ public class InvadersManager : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// Función que controla la velocidad y aceleración de los invaders, según la cantidad que queden
+    /// </summary>
     private void InvadersSpeed()
     {
         int invadersCount = InvadersCounter();
@@ -267,11 +286,14 @@ public class InvadersManager : MonoBehaviour
         invadersSpeedAcceleration = Mathf.Clamp(invadersSpeedAcceleration, 0f, 7.5f);
     }
 
+    /// <summary>
+    /// Función que controla el movimiento lateral de los invaders
+    /// </summary>
     private void InvadersLateralMovement()
     {
         limitReached = false;
 
-        // Encuentra los extremos activos
+        // Se encuentra los extremos activos de la matriz en cada momento
         int activeLeftColumn = -1;
         int activeRightColumn = -1;
 
@@ -283,50 +305,64 @@ public class InvadersManager : MonoBehaviour
                 {
                     if (activeLeftColumn == -1)
                     {
-                        activeLeftColumn = i; // Primer invader activo a la izquierda
+                        // El primero que se encuentra activo es el más a la izquierda
+                        activeLeftColumn = i;
                     }
 
-                    activeRightColumn = i; // Último invader activo a la derecha
+                    // Continúa recorriendo la matriz, el último que se encuentra activo es el más a la derecha
+                    activeRightColumn = i;
                 }
 
                 GameObject invader = matrizInvaders[i][j];
 
+                // Si hay invaders activos
                 if (invader.activeSelf == true)
                 {
+                    // Y se están moviendo a la derecha, el movimiento es positivo, hacia la derecha
                     if (movingRight)
                     {
                         invadersMovement = invadersSpeedAcceleration * Time.deltaTime;
                     }
+
+                    // Si no, el movimiento es negativo, hacia la izquierda
                     else
                     {
                         invadersMovement = -invadersSpeedAcceleration * Time.deltaTime;
                     }
 
+                    // Se crea el vector con la dirección de ese movimiento
                     Vector3 newInvadersMovement = invader.transform.position;
 
-                    newInvadersMovement.x += invadersMovement;
+                    newInvadersMovement.x = newInvadersMovement.x + invadersMovement;
 
-                    // Detectar si el límite se alcanza para los extremos
+                    // Si el invader activo más a la derecha, se está moviendo a la derecha y llega al límite, se ha alcanzado ese límite
                     if (i == activeRightColumn && newInvadersMovement.x >= invadersMovementLimit && movingRight)
                     {
                         limitReached = true;
                     }
+
+                    // Si el invader activo más a la izquierda, se está moviendo a la izquierda y llega al límite, se ha alcanzado ese límite
                     else if (i == activeLeftColumn && newInvadersMovement.x <= -invadersMovementLimit && !movingRight)
                     {
                         limitReached = true;
                     }
 
+                    // Se establece el movimiento final de los invaders
                     invader.transform.position = newInvadersMovement;
                 }
             }
         }
 
+        // Cuando se llega al limite, los invaders bajan de posición
         if (limitReached)
         {
             InvadersDownMovement();
         }
     }
 
+    /// <summary>
+    /// Función que controla el movimiento hacia abajo de los invaders
+    /// </summary>
     private void InvadersDownMovement()
     {
         for (int i = 0; i < totalColumns; i++)
@@ -343,10 +379,14 @@ public class InvadersManager : MonoBehaviour
             }
         }
 
+        // Cuando los invaders bajan de fila, significa que el límite se alcanzo y hay que cambiar la dirección del movimiento de los invaders
         movingRight = !movingRight;
 
     }
 
+    /// <summary>
+    /// Función que busca el invader activo que esté más abajo en cada columna, para luego disparar desde ese invader, cada cierto tiempo
+    /// </summary>
     private void LastActiveInvaderShooting()
     {
         int randX = Random.Range(0, totalColumns);
@@ -366,11 +406,12 @@ public class InvadersManager : MonoBehaviour
             newProjectile = Instantiate(projectile, activeEnemyPosition, projectile.transform.rotation);
 
             SoundsManager.instance.PlaySound(SoundsManager.instance.invaderShootingSound);
-
-            //Debug.Log("Ultimo elemento activo " + randX + ", " + activeEnemy);
         }
     }
 
+    /// <summary>
+    /// Función que se llama desde otro script para desactivar los invaders restantes, una vez el jugador sea eliminado
+    /// </summary>
     public void DeactivateInvaders()
     {
         for (int i = 0; i < totalColumns; i++)
@@ -389,9 +430,13 @@ public class InvadersManager : MonoBehaviour
             newBigInvader.SetActive(false);
         }
 
+        // Si se ha llamado a esta función, significa que el juego ha acabado
         gameIsOver = true;
     }
 
+    /// <summary>
+    /// Función que controla el spawn derecho del big invader
+    /// </summary>
     private void BigInvaderRightSpawn()
     {
         bigInvaderSpawnPosition = new Vector3(bigInvaderSpawnPosX, bigInvaderSpawnPosY, 0f);
@@ -399,6 +444,9 @@ public class InvadersManager : MonoBehaviour
         SoundsManager.instance.bigInvaderSoundSource.Play();
     }
 
+    /// <summary>
+    /// Función que controla el spawn izquierdo del big invader
+    /// </summary>
     private void BigInvaderLeftSpawn()
     {
         bigInvaderSpawnPosition = new Vector3(-bigInvaderSpawnPosX, bigInvaderSpawnPosY, 0f);
@@ -406,6 +454,10 @@ public class InvadersManager : MonoBehaviour
         SoundsManager.instance.bigInvaderSoundSource.Play();
     }
 
+    /// <summary>
+    /// Función que controla la animación de los invaders, buscando los hijos de cada padre que se instancia en la matriz
+    /// </summary>
+    /// <param name="invader"></param>
     private void InvaderAnimation(GameObject invader)
     {
         Transform invader1 = invader.transform.GetChild(0);
@@ -415,6 +467,10 @@ public class InvadersManager : MonoBehaviour
         invader2.gameObject.SetActive(!modelChanging);
     }
 
+    /// <summary>
+    /// Función que controla la animación del big invader, buscando los hijos de cada padre que se intancia
+    /// </summary>
+    /// <param name="bigInvader"></param>
     private void BigInvaderAnimation(GameObject bigInvader)
     {
         Transform bigInvader1 = bigInvader.transform.GetChild(0);
@@ -427,7 +483,9 @@ public class InvadersManager : MonoBehaviour
     
 
 
-
+    /// <summary>
+    /// Función de prueba para limpiar la matriz al pulsar el botón de volver a juagr
+    /// </summary>
     public void ClearInvaders()
     {
         for (int i = 0; i < totalColumns; i++)

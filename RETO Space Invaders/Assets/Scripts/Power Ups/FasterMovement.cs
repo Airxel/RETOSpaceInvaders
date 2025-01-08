@@ -7,10 +7,12 @@ public class FasterMovement : MonoBehaviour, IPowerUpsInterface
     [SerializeField]
     private float powerUpDuration = 10f;
 
+    /// <summary>
+    /// Función que se llama desde la interfaz
+    /// </summary>
     public void PickUp()
     {
-        Debug.Log("Aumentando Velocidad");
-
+        // Se busca al jugador y según el tipo que sea, se activa la inversión de movimiento en ese script
         GameObject player = FindPlayerShip();
 
         if (player != null)
@@ -40,6 +42,10 @@ public class FasterMovement : MonoBehaviour, IPowerUpsInterface
         Destroy(this.gameObject);
     }
 
+    /// <summary>
+    /// Función que controla las interacciones del power-up con el resto de elementos
+    /// </summary>
+    /// <param name="other"></param>
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Bottom Wall"))
@@ -48,6 +54,10 @@ public class FasterMovement : MonoBehaviour, IPowerUpsInterface
         }
     }
 
+    /// <summary>
+    /// Función que busca el tipo de jugador en escena, al ser 3 posibles, para luego activar el power-up en esa nave
+    /// </summary>
+    /// <returns></returns>
     private GameObject FindPlayerShip()
     {
         GameObject player = GameObject.FindWithTag("Fast Ship");

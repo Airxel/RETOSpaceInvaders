@@ -4,26 +4,28 @@ using UnityEngine;
 
 public class SheltersHealing : MonoBehaviour, IPowerUpsInterface
 {
+    /// <summary>
+    /// Función que se llama desde la interfaz
+    /// </summary>
     public void PickUp()
     {
-        Debug.Log("Refugios Restaurados");
-
+        // Se busca al jugador y según el tipo que sea, se activa la inversión de movimiento en ese script
         GameObject player = FindPlayerShip();
 
         if (player != null)
         {
-
+            // Se hace una lista con los objetos que tengan la etiqueta de "Shelter"
             GameObject[] shelters = GameObject.FindGameObjectsWithTag("Shelter");
 
             for (int i = 0; i < shelters.Length; i++)
             {
+                // Se recorre la lista y se activa el power-up en los shelters encontrados
                 GameObject shelter = shelters[i];
 
                 SheltersManager shelterState = shelter.GetComponent<SheltersManager>();
 
                 if (shelterState != null)
                 {
-                    Debug.Log("Healing Shelter: " + shelter.name);
                     shelterState.SheltersHealing();
                     shelter.SetActive(true);
                 }
@@ -33,6 +35,10 @@ public class SheltersHealing : MonoBehaviour, IPowerUpsInterface
         Destroy(this.gameObject);
     }
 
+    /// <summary>
+    /// Función que controla las interacciones del power-up con el resto de elementos
+    /// </summary>
+    /// <param name="other"></param>
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Bottom Wall"))
@@ -41,6 +47,10 @@ public class SheltersHealing : MonoBehaviour, IPowerUpsInterface
         }
     }
 
+    /// <summary>
+    /// Función que busca el tipo de jugador en escena, al ser 3 posibles, para luego activar el power-up con esa nave
+    /// </summary>
+    /// <returns></returns>
     private GameObject FindPlayerShip()
     {
         GameObject player = GameObject.FindWithTag("Fast Ship");
