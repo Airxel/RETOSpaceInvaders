@@ -17,6 +17,9 @@ public class AnimationsManager : MonoBehaviour
 
     private bool modelChanging = true;
 
+    /// <summary>
+    /// Función que controla continuamente el cambio entre un modelo y otro, controlado por un timer
+    /// </summary>
     private void Update()
     {
         modelChangeTimer = modelChangeTimer + Time.deltaTime;
@@ -34,24 +37,36 @@ public class AnimationsManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Función que activa y desactiva los modelos, animando el objeto
+    /// </summary>
     private void FastShipAnimation()
     {
         fastShip1.SetActive(modelChanging);
         fastShip2.SetActive(!modelChanging);
     }
 
+    /// <summary>
+    /// Función que activa y desactiva los modelos, animando el objeto
+    /// </summary>
     private void BalancedShipAnimation()
     {
         balancedShip1.SetActive(modelChanging);
         balancedShip2.SetActive(!modelChanging);
     }
 
+    /// <summary>
+    /// Función que activa y desactiva los modelos, animando el objeto
+    /// </summary>
     private void SlowShipAnimation()
     {
         slowShip1.SetActive(modelChanging);
         slowShip2.SetActive(!modelChanging);
     }
 
+    /// <summary>
+    /// Función que activa y desactiva los modelos, animando el objeto
+    /// </summary>
     private void ShelterAnimation()
     {
         leftShelter1.SetActive(modelChanging);

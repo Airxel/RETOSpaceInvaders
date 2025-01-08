@@ -3803,7 +3803,7 @@ MonoBehaviour:
   invadersCount: 0
   invadersSpeed: 1.25
   invadersSpeedAcceleration: 0
-  accelerationFactor: 0.125
+  accelerationFactor: 0.15
   moveDownDistance: 1
   invadersMovementLimit: 46.25
   minShootingSeconds: 1
@@ -4821,7 +4821,7 @@ MonoBehaviour:
   mainShipCollection: {fileID: 498203706}
   modelChangeTime: 0.5
   mainShipSpeed: 75
-  mainShipMovementLimit: 80
+  mainShipMovementLimit: 75
 --- !u!1 &508751541
 GameObject:
   m_ObjectHideFlags: 0

@@ -26,6 +26,9 @@ public class SoundsManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Función que mueve los sliders al mismo valor inicial de los volúmenes
+    /// </summary>
     private void Start()
     {
         //Sliders y volúmenes
@@ -33,11 +36,18 @@ public class SoundsManager : MonoBehaviour
         musicSlider.value = musicSource.volume;
     }
 
+    /// <summary>
+    /// Función que se llama desde el resto de scripts, para hacer sonar un sonido específico, según la situación
+    /// </summary>
+    /// <param name="sound"></param>
     public void PlaySound(AudioClip sound)
     {
         soundsSource.PlayOneShot(sound);
     }
 
+    /// <summary>
+    /// Función que controla el volúmen al cambiar los sliders una vez jugando
+    /// </summary>
     public void SoundVolume()
     {
         soundsSource.volume = soundsSlider.value;

@@ -7,11 +7,18 @@ public class PlayerProjectile : MonoBehaviour
     [SerializeField]
     private float projectileSpeed = 100f;
 
+    /// <summary>
+    /// Función que controla el movimiento del proyectil de selección de personaje
+    /// </summary>
     private void Update()
     {
         this.transform.Translate(Vector3.up * projectileSpeed * Time.deltaTime);
     }
 
+    /// <summary>
+    /// Función que controla las interacciones del proyectil con otros elementos
+    /// </summary>
+    /// <param name="other"></param>
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Fast Ship"))
@@ -38,6 +45,9 @@ public class PlayerProjectile : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Función común, que se encarga de activar y desactivar los elementos necesarios, dando paso al spawn de los invaders
+    /// </summary>
     private void PlayerSelectedUI()
     {
         GameManager.instance.playerSelection.SetActive(false);
@@ -50,16 +60,25 @@ public class PlayerProjectile : MonoBehaviour
         InvadersManager.instance.InvadersSpawn();
     }
 
+    /// <summary>
+    /// Función que activa la nave correspondiente
+    /// </summary>
     private void FastShipSelected()
     {
         GameManager.instance.fastShipCollection.SetActive(true); 
     }
 
+    /// <summary>
+    /// Función que activa la nave correspondiente
+    /// </summary>
     private void BalancedShipSelected()
     {
         GameManager.instance.balancedShipCollection.SetActive(true);
     }
 
+    /// <summary>
+    /// Función que activa la nave correspondiente
+    /// </summary>
     private void SlowShipSelected()
     {
         GameManager.instance.slowShipCollection.SetActive(true);

@@ -51,6 +51,9 @@ public class FastShipManager : MonoBehaviour
     [SerializeField]
     private float fasterMovementTimer;
 
+    /// <summary>
+    /// Se establecen los valores bases, para poder usarlos con los power-ups, por ejemplo
+    /// </summary>
     private void Start()
     {
         baseSpeed = speed;
@@ -65,15 +68,7 @@ public class FastShipManager : MonoBehaviour
 
             if (fasterShooting)
             {
-                shootingDelayTime = baseShootingDelayTime * fasterShootingMultiplier;
-
-                fasterShootingTimer = fasterShootingTimer - Time.deltaTime;
-
-                if (fasterShootingTimer <= 0f)
-                {
-                    shootingDelayTime = baseShootingDelayTime;
-                    fasterShooting = false;
-                }
+                FasterShotSpeedIsActive();
             }
 
             if (shootingDelayTimer >= shootingDelayTime)
@@ -83,19 +78,16 @@ public class FastShipManager : MonoBehaviour
         }
         else if (GameManager.isRespawning)
         {
-            respawnTimer = respawnTimer + Time.deltaTime;
-
-            if (respawnTimer >= respawnTime)
-            {
-                GameManager.isRespawning = false;
-
-                respawnTimer = 0f;
-            }
+            PlayerIsRespawning();
         }
 
         ShipMovement();
     }
 
+    /// <summary>
+    /// Función que controla la interfaz y las interacciones de la nave con otros elementos
+    /// </summary>
+    /// <param name="other"></param>
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Enemy Projectile"))
@@ -107,6 +99,7 @@ public class FastShipManager : MonoBehaviour
             EnemyContact();
         }
 
+        // Se llama a la interfaz, al interactuar con un power-up
         IPowerUpsInterface powerUp = other.GetComponent<IPowerUpsInterface>();
 
         if (powerUp != null)
@@ -144,6 +137,18 @@ public class FastShipManager : MonoBehaviour
         GameManager.isRespawning = true;
 
         this.transform.position = new Vector3(0f, 10f, 0f);
+    }
+
+    private void PlayerIsRespawning()
+    {
+        respawnTimer = respawnTimer + Time.deltaTime;
+
+        if (respawnTimer >= respawnTime)
+        {
+            GameManager.isRespawning = false;
+
+            respawnTimer = 0f;
+        }
     }
 
     private void ShootingProjectile()
@@ -210,5 +215,18 @@ public class FastShipManager : MonoBehaviour
     {
         fasterShooting = true;
         fasterShootingTimer = powerUpDuration;
+    }
+
+    private void FasterShotSpeedIsActive()
+    {
+        shootingDelayTime = baseShootingDelayTime * fasterShootingMultiplier;
+
+        fasterShootingTimer = fasterShootingTimer - Time.deltaTime;
+
+        if (fasterShootingTimer <= 0f)
+        {
+            shootingDelayTime = baseShootingDelayTime;
+            fasterShooting = false;
+        }
     }
 }
