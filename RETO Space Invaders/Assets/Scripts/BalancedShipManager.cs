@@ -13,7 +13,7 @@ public class BalancedShipManager : MonoBehaviour
     private float shipMovement;
 
     [SerializeField]
-    GameObject projectile, newProjectile;
+    GameObject projectile, newProjectile, specialProjectile, newSpecialProjectile;
 
     [SerializeField]
     private float shootingDelayTime = 1f;
@@ -51,6 +51,12 @@ public class BalancedShipManager : MonoBehaviour
     [SerializeField]
     private float fasterMovementTimer;
 
+    [SerializeField]
+    private float specialShootingDelayTime = 5f;
+
+    [SerializeField]
+    private float specialShootingDelayTimer;
+
     /// <summary>
     /// Se establecen los valores bases, para poder usarlos con los power-ups, por ejemplo
     /// </summary>
@@ -66,6 +72,8 @@ public class BalancedShipManager : MonoBehaviour
         {
             shootingDelayTimer = shootingDelayTimer + Time.deltaTime;
 
+            specialShootingDelayTimer = specialShootingDelayTimer + Time.deltaTime;
+
             // Esto ocurre si el power-up de más velocidad de disparo está activo
             if (fasterShooting)
             {
@@ -75,6 +83,11 @@ public class BalancedShipManager : MonoBehaviour
             if (shootingDelayTimer >= shootingDelayTime)
             {
                 ShootingProjectile();
+            }
+
+            if (specialShootingDelayTimer >= specialShootingDelayTime)
+            {
+                ShootingSpecialProjectile();
             }
         }
         else if (GameManager.isRespawning)
@@ -182,6 +195,21 @@ public class BalancedShipManager : MonoBehaviour
     }
 
     /// <summary>
+    /// Función que controla el disparo especial del jugador
+    /// </summary>
+    private void ShootingSpecialProjectile()
+    {
+        if (Input.GetButtonUp("Special Shoot"))
+        {
+            newSpecialProjectile = Instantiate(specialProjectile, this.transform.position, Quaternion.identity);
+
+            SoundsManager.instance.PlaySound(SoundsManager.instance.playerShootingSound);
+
+            specialShootingDelayTimer = 0f;
+        }
+    }
+
+    /// <summary>
     /// Función que controla el movimiento del jugador
     /// </summary>
     private void ShipMovement()
@@ -252,6 +280,9 @@ public class BalancedShipManager : MonoBehaviour
         fasterShootingTimer = powerUpDuration;
     }
 
+    /// <summary>
+    /// Función que controla el tiempo de activación del aumento de velocidad de disparo
+    /// </summary>
     private void FasterShotSpeedIsActive()
     {
         shootingDelayTime = baseShootingDelayTime * fasterShootingMultiplier;

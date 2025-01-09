@@ -27,7 +27,8 @@ public class BigInvader : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Fast Projectile") ||
             other.gameObject.CompareTag("Balanced Projectile") ||
-            other.gameObject.CompareTag("Slow Projectile"))
+            other.gameObject.CompareTag("Slow Projectile") ||
+            other.gameObject.CompareTag("Special Projectile"))
         {
             SoundsManager.instance.PlaySound(SoundsManager.instance.invaderDeadSound);
 

@@ -23,6 +23,7 @@ TagManager:
   - Left Limit
   - Right Limit
   - Player Ship
+  - Special Projectile
   layers:
   - Default
   - TransparentFX

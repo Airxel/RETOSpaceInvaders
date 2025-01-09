@@ -7,7 +7,7 @@ public class SoundsManager : MonoBehaviour
 {
     public AudioSource soundsSource, musicSource, bigInvaderSoundSource;
 
-    public AudioClip playerShootingSound, playerDeadSound, invaderShootingSound, invaderDeadSound;
+    public AudioClip playerShootingSound, playerDeadSound, invaderShootingSound, invaderDeadSound, specialExplosionSound;
 
     public Slider soundsSlider, musicSlider;
 

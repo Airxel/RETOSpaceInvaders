@@ -49,6 +49,10 @@ public class SheltersManager : MonoBehaviour
         {
             ShelterState();
         }
+        else if (other.gameObject.CompareTag("Special Projectile"))
+        {
+            ShelterState();
+        }
         else if (other.gameObject.CompareTag("Enemy"))
         {
             ShelterEnemyContact();

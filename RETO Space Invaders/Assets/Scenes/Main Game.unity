@@ -922,6 +922,7 @@ MonoBehaviour:
   - {fileID: 5672085197853222228, guid: 3261c04178112504ea436d7c5d9aad85, type: 3}
   spawnChance: 25
   randomSpawn: 0
+  specialProjectileDamage: 5
 --- !u!54 &87197370
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2929,6 +2930,7 @@ MonoBehaviour:
   - {fileID: 5672085197853222228, guid: 3261c04178112504ea436d7c5d9aad85, type: 3}
   spawnChance: 25
   randomSpawn: 0
+  specialProjectileDamage: 5
 --- !u!54 &298563027
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3721,16 +3723,20 @@ MonoBehaviour:
   shipMovementLimit: 45
   projectile: {fileID: 2535070997529284090, guid: e5aa3e4f21f4f2140a01b3eba23ffb53, type: 3}
   newProjectile: {fileID: 0}
+  specialProjectile: {fileID: 2455347374948100560, guid: aa531604d0892944996dc69aed0eafa4, type: 3}
+  newSpecialProjectile: {fileID: 0}
   shootingDelayTime: 1
-  shootingDelayTimer: 1
+  shootingDelayTimer: 0
   respawnTime: 3
   respawnTimer: 0
   invertMovement: 0
-  fasterMovementMultiplier: 2
+  fasterMovementMultiplier: 1.5
   fasterShootingMultiplier: 0.5
   invertMovementTimer: 0
   fasterShootingTimer: 0
   fasterMovementTimer: 0
+  specialShootingDelayTime: 5
+  specialShootingDelayTimer: 0
 --- !u!65 &410773886
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9297,16 +9303,20 @@ MonoBehaviour:
   shipMovementLimit: 45
   projectile: {fileID: 2535070997529284090, guid: e10359652c31c614a93c2ba449f36693, type: 3}
   newProjectile: {fileID: 0}
+  specialProjectile: {fileID: 2455347374948100560, guid: aa531604d0892944996dc69aed0eafa4, type: 3}
+  newSpecialProjectile: {fileID: 0}
   shootingDelayTime: 1
-  shootingDelayTimer: 1
+  shootingDelayTimer: 0
   respawnTime: 3
   respawnTimer: 0
   invertMovement: 0
-  fasterMovementMultiplier: 2
+  fasterMovementMultiplier: 1.5
   fasterShootingMultiplier: 0.5
   invertMovementTimer: 0
   fasterShootingTimer: 0
   fasterMovementTimer: 0
+  specialShootingDelayTime: 5
+  specialShootingDelayTimer: 0
 --- !u!65 &1296220347
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9937,16 +9947,20 @@ MonoBehaviour:
   shipMovementLimit: 45
   projectile: {fileID: 2535070997529284090, guid: 1b9bf85712faa0445804242df8c1ea9a, type: 3}
   newProjectile: {fileID: 0}
+  specialProjectile: {fileID: 2455347374948100560, guid: aa531604d0892944996dc69aed0eafa4, type: 3}
+  newSpecialProjectile: {fileID: 0}
   shootingDelayTime: 1
-  shootingDelayTimer: 1
+  shootingDelayTimer: 0
   respawnTime: 3
   respawnTimer: 0
   invertMovement: 0
-  fasterMovementMultiplier: 2
+  fasterMovementMultiplier: 1.5
   fasterShootingMultiplier: 0.5
   invertMovementTimer: 0
   fasterShootingTimer: 0
   fasterMovementTimer: 0
+  specialShootingDelayTime: 5
+  specialShootingDelayTimer: 0
 --- !u!65 &1369017843
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10643,6 +10657,7 @@ MonoBehaviour:
   - {fileID: 5672085197853222228, guid: 3261c04178112504ea436d7c5d9aad85, type: 3}
   spawnChance: 25
   randomSpawn: 0
+  specialProjectileDamage: 5
 --- !u!54 &1448474051
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13954,6 +13969,7 @@ MonoBehaviour:
   playerDeadSound: {fileID: 8300000, guid: f92271d6768391d449fc735813025d3f, type: 3}
   invaderShootingSound: {fileID: 8300000, guid: ecb313cf9817c8144bd73169a6ef01e8, type: 3}
   invaderDeadSound: {fileID: 8300000, guid: 5cd7fb6b76af1e54f9fb070ebfa36e63, type: 3}
+  specialExplosionSound: {fileID: 8300000, guid: 9d89aa40cfb3f554e9b47c96f344ab62, type: 3}
   soundsSlider: {fileID: 799662020}
   musicSlider: {fileID: 488726412}
 --- !u!82 &2027992645
@@ -14265,6 +14281,7 @@ MonoBehaviour:
   - {fileID: 5672085197853222228, guid: 3261c04178112504ea436d7c5d9aad85, type: 3}
   spawnChance: 25
   randomSpawn: 0
+  specialProjectileDamage: 5
 --- !u!54 &2059268568
 Rigidbody:
   m_ObjectHideFlags: 0

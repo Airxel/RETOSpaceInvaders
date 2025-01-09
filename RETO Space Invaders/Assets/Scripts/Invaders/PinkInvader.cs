@@ -28,6 +28,9 @@ public class PinkInvader : MonoBehaviour
     [SerializeField]
     private int randomSpawn;
 
+    [SerializeField]
+    private int specialProjectileDamage = 5;
+
     /// <summary>
     /// Función que controla las interacciones del invader con otros elementos
     /// </summary>
@@ -45,6 +48,10 @@ public class PinkInvader : MonoBehaviour
         else if (other.gameObject.CompareTag("Slow Projectile"))
         {
             SlowProjectileHit();
+        }
+        else if (other.gameObject.CompareTag("Special Projectile"))
+        {
+            SpecialProjectileHit();
         }
     }
 
@@ -80,6 +87,16 @@ public class PinkInvader : MonoBehaviour
     private void SlowProjectileHit()
     {
         hitPoints = hitPoints - slowProjectileDamage;
+
+        if (hitPoints <= 0)
+        {
+            DeadInvader();
+        }
+    }
+
+    private void SpecialProjectileHit()
+    {
+        hitPoints = hitPoints - specialProjectileDamage;
 
         if (hitPoints <= 0)
         {
