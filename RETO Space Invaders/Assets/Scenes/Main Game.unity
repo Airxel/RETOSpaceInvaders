@@ -923,6 +923,9 @@ MonoBehaviour:
   spawnChance: 25
   randomSpawn: 0
   specialProjectileDamage: 5
+  particles: {fileID: 2139998563178677105, guid: 643aa64042253c84898a99515422b426, type: 3}
+  newParticles: {fileID: 0}
+  particlesDelay: 0.75
 --- !u!54 &87197370
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2931,6 +2934,9 @@ MonoBehaviour:
   spawnChance: 25
   randomSpawn: 0
   specialProjectileDamage: 5
+  particles: {fileID: 2139998563178677105, guid: 50508edf76a03614daa218cc306a387f, type: 3}
+  newParticles: {fileID: 0}
+  particlesDelay: 0.75
 --- !u!54 &298563027
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6532,6 +6538,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 100
+  particles: {fileID: 2139998563178677105, guid: 3b5c68641951abf40b08b17aba8dd6f5, type: 3}
+  newParticles: {fileID: 0}
+  particlesDelay: 0.75
 --- !u!1 &787651792
 GameObject:
   m_ObjectHideFlags: 0
@@ -10658,6 +10667,9 @@ MonoBehaviour:
   spawnChance: 25
   randomSpawn: 0
   specialProjectileDamage: 5
+  particles: {fileID: 2139998563178677105, guid: 5c2f4120f4a8def42b09924c82db7197, type: 3}
+  newParticles: {fileID: 0}
+  particlesDelay: 0.75
 --- !u!54 &1448474051
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14282,6 +14294,9 @@ MonoBehaviour:
   spawnChance: 25
   randomSpawn: 0
   specialProjectileDamage: 5
+  particles: {fileID: 2139998563178677105, guid: ec626e94585ef264d827304c67186c50, type: 3}
+  newParticles: {fileID: 0}
+  particlesDelay: 0.75
 --- !u!54 &2059268568
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -31,6 +31,12 @@ public class PinkInvader : MonoBehaviour
     [SerializeField]
     private int specialProjectileDamage = 5;
 
+    [SerializeField]
+    GameObject particles, newParticles;
+
+    [SerializeField]
+    private float particlesDelay = 0.5f;
+
     /// <summary>
     /// Función que controla las interacciones del invader con otros elementos
     /// </summary>
@@ -127,7 +133,12 @@ public class PinkInvader : MonoBehaviour
         SpawnPowerUp();
 
         SoundsManager.instance.PlaySound(SoundsManager.instance.invaderDeadSound);
+
         GameManager.instance.AddPoints(points);
+
+        newParticles = Instantiate(particles, this.transform.position, Quaternion.identity);
+
+        Destroy(newParticles, particlesDelay);
 
         this.gameObject.SetActive(false);
     }

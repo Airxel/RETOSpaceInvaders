@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.ParticleSystem;
 
 public class SpecialProjectile : MonoBehaviour
 {
@@ -8,6 +9,12 @@ public class SpecialProjectile : MonoBehaviour
     private float projectileSpeed = 100f;
 
     private Transform explosionHitbox;
+
+    [SerializeField]
+    GameObject explosion, newExplosion;
+
+    [SerializeField]
+    private float explosionDelay = 0.25f;
 
     /// <summary>
     /// Función que controla el movimiento del proyectil especial
@@ -37,6 +44,10 @@ public class SpecialProjectile : MonoBehaviour
 
             // Se activa esa hitbox
             explosionHitbox.gameObject.SetActive(true);
+
+            newExplosion = Instantiate(explosion, this.transform.position, Quaternion.identity);
+
+            Destroy(newExplosion,explosionDelay);
 
             SoundsManager.instance.PlaySound(SoundsManager.instance.specialExplosionSound);
 

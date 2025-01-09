@@ -1,11 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.ParticleSystem;
 
 public class BigInvader : MonoBehaviour
 {
     [SerializeField]
     private float points = 100f;
+
+    [SerializeField]
+    GameObject particles, newParticles;
+
+    [SerializeField]
+    private float particlesDelay = 0.5f;
 
     /// <summary>
     /// Función que controla las interacciones del big invader con otros elementos
@@ -33,6 +40,10 @@ public class BigInvader : MonoBehaviour
             SoundsManager.instance.PlaySound(SoundsManager.instance.invaderDeadSound);
 
             GameManager.instance.AddPoints(points);
+
+            newParticles = Instantiate(particles, this.transform.position, Quaternion.identity);
+
+            Destroy(newParticles, particlesDelay);
 
             if (InvadersManager.instance.rightSpawn)
             {
